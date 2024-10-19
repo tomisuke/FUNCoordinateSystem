@@ -41,10 +41,11 @@ void masufillD(int x,int y,int size) {
     rect(mapx(ax),mapy(ay),size,size);
 }
 void masufillR(int x,int y,int size) {
-    int ax = mappoint(x,y)[0];
-    int ay = mappoint(x,y)[1];
+    //int ax = mappoint(x,y)[0];
+    //int ay = mappoint(x,y)[1];
+    //println(ax,ay);
     fill(0,0,255);
-    rect(mapx(ax),mapy(ay),size,size);
+    rect(mapx(x),mapy(y),size,size);
 }
 //通った道を保存する二重配列 
 int[][] way = new int[2][20];//[0][]はx座標、[1][]がy座標
@@ -79,7 +80,7 @@ void navi() {
     isGoF3[5][9] = 1;
     int decx,decy;
     int startX = mappoint(masuxyz(h)[0],masuxyz(h)[1])[0];//現在地のｘ（0）
-    int startY = mappoint(masuxyz(h)[0],masuxyz(h)[1])[1];//現在地のｙ（7）
+    int startY = mappoint(masuxyz(h)[0],masuxyz(h)[1])[1];//現在地のｙ（6）
     //まず目的地が３階の場合
     if (masuxyz(goal)[2] == 3) {
         //現在地と目的地goalの座標の差を導出
@@ -87,37 +88,68 @@ void navi() {
         decx = mappoint(masuxyz(goal)[0],masuxyz(goal)[1])[0] - mappoint(masuxyz(h)[0],masuxyz(h)[1])[0];
         //yは目的地の座標が大きいと正、小さいと負になる
         decy = mappoint(masuxyz(goal)[0],masuxyz(goal)[1])[1] - mappoint(masuxyz(h)[0],masuxyz(h)[1])[1];
-        
+        //println(decx,decy);
+        int check;
+        if (decy >= 0) {
+            check = decx + decy;
+        }
+        else{
+            check = decx - decy;
+        }
+        //println(decy,check);
         //x,yを+1してぶつかるかぶつからないかを判定してから配列に代入
-        //yを優先して移動させる
-        int check = abs(decy) + decx;
         while(record < check) {
-            if (decy < 0) {
+            if (decy <= 0) {
+                //println(0,startX,startY - 1);
                 if (isGoF3[startX][startY - 1] == 1) {
                     startY -= 1;
                     way[0][record] = startX;
                     way[1][record] = startY;
-                    record++;
+                    //println(way[0][record],way[1][record]);
+                    record += 1;
                     decy++;
-                    println(startX,startY);
+                    //println(2,record);
+                }
+                else{
+                    startX += 1;
+                    way[0][record] = startX;
+                    way[1][record] = startY;
+                    record += 1;
+                    decx--;
+                    //println(3,record);
                 }
             }
-            if (decy > 0) {
+            
+            else if (decy > 0) {
+                //println(1,startX,startY + 1);
                 if (isGoF3[startX][startY + 1] == 1) {
                     startY -= 1;
                     way[0][record] = startX;
                     way[1][record] = startY;
-                    record++;
+                    record += 1;
                     decy--;
+                    //println(4,record);
                 }
+                else{
+                    startX += 1;
+                    way[0][record] = startX;
+                    way[1][record] = startY;
+                    record += 1;
+                    decx--;
+                    
+                    //println(5,record);
+                }
+                
             }
             else{
                 startX += 1;
                 way[0][record] = startX;
                 way[1][record] = startY;
-                record++;
+                record += 1;
                 decx--;
+                //println(6,record);
             }
+            
         }
     }
     //目的地が3階以外の場合

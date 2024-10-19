@@ -257,11 +257,11 @@ void draw() {
     navi();
     for (int i = 0; i < record;i++) {
         masufillR(way[0][i],way[1][i],size);
-        //println(way[0][i],way[1][i]);
+        println(way[0][i],way[1][i]);
     }
     masufillS(masuxyz(h)[0],masuxyz(h)[1],size);
-    masufillD(masuxyz(distination)[0],masuxyz(distination)[1],size);
+    masufillD(masuxyz(destination)[0],masuxyz(destination)[1],size);
 }
 int h = 30007;//現在地
-int goal = 30913;//目的地のゴール
-int distination = 30911;//目的地
+int goal = 30513;//目的地のゴール
+int destination = 30511;//目的地
