@@ -1,10 +1,3 @@
-int defaultButtonX = 330;
-int defaultButtonY = 120;
-int destinationButtonW = 250;
-int destinationButtonH = 100;
-int betweenH = 30;
-int betweenW = 20;
-
 void f5Button() {
   fill(0);
   textSize(50);

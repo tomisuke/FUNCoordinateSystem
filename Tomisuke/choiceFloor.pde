@@ -1,3 +1,11 @@
+int defaultButtonX = 330;
+int defaultButtonY = 120;
+int destinationButtonW = 270;
+int destinationButtonH = 100;
+int betweenH = 30;
+int betweenW = 40;
+int goal,destination;
+
 void hidefButton(){
   f1Button.hide();
   f2Button.hide();
