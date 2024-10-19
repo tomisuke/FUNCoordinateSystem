@@ -8,6 +8,7 @@ void hidefButton(){
 
 void f5() {
   hidefButton();
+  f5Button();
   f5Button.show();
   println("5階を選択");
 }
