@@ -107,12 +107,11 @@ void isGo() {
   isGoF5[5][4] = 2;
   isGoF5[6][4] = 1;
   isGoF5[7][4] = 1;
-  isGoF5[0][6] = 1;
-  isGoF5[1][6] = 1;
+  isGoF5[1][6] = 2;
   isGoF5[2][6] = 1;
   isGoF5[3][6] = 1;
   isGoF5[4][6] = 1;
-  isGoF5[5][6] = 1;
+  isGoF5[5][6] = 2;
   isGoF5[6][6] = 1;
-  isGoF5[7][6] = 1;//通路要検討
+  isGoF5[7][6] = 1;
 }
