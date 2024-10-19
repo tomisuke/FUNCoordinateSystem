@@ -90,4 +90,13 @@ void choiceFloorNavi() {
     .setColorBackground(buttonColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
+
+  floorButtonNavi.addButton("back")
+    .setLabel("Home")
+    .setPosition(320, 40)
+    .setSize(100, 100)
+    .setColorCaptionLabel(labelColor)
+    .setColorBackground(buttonColor)
+    .setColorForeground(buttonForegroundColor)
+    .setColorActive(buttonActiveColor);
 }

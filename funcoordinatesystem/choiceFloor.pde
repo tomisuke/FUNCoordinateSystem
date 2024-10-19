@@ -82,3 +82,11 @@ void f1N() {
   floor = 1;
   println("1階を選択");
 }
+void back() {
+  scene = 0;
+  hideAllButton();
+  background(255);
+  f3();
+  floorButtonHome.show();
+  println("ホームに戻った");
+}
