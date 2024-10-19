@@ -1,4 +1,4 @@
-int floor=4;//仮置き
+int floor=5;//仮置き
 int size=75;//スペースの長さ
 int centerX=800;//方眼紙の中央の座標です。
 int centerY=450;
