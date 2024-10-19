@@ -44,7 +44,6 @@ void floor5() {
   ce(0, 1, 2, 5);
   ce(0, 7, 1, 2);
   ce(1, 5, 1, 3);
-  // ce(2, 5, 6, 4);
   ce(2, 7, 4, 2);
   ce(5, 9, 3, 1);
   ce(5, 3, 1, 3);
@@ -74,7 +73,7 @@ void floor5() {
 
   fac5();
 
-  strokeWeight(ST);
+  strokeWeight(ST);//外枠
   le(0, 1, 2, 1);
   le(2, 1, 2, 4);
   le(2, 4, 5, 4);

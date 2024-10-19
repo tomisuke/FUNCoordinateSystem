@@ -15,7 +15,6 @@ int c494C=100;
 int c495C=100;
 
 void fac4() {
-
   int x=centerX;
   int y=centerY;
   re("422\n423\n424", x+size*2, y+size*4, size, size, c422C);
@@ -63,7 +62,8 @@ void floor4() {
   le(5, 7, 6, 7);
 
   fac4();
-  strokeWeight(ST);
+
+  strokeWeight(ST);//外枠
   le(0, 1, 2, 1);
   le(0, 1, 0, 3);
   le(0, 3, 1, 3);

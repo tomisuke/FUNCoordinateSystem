@@ -19,9 +19,7 @@ int c334C=100;
 void fac3() {
   int x=centerX;
   int y=centerY;
-  
   re("玄関", x, y+size*6, size, size, enterC);
-
   re("ライブ\nラリ", x, y, size, size*6, libC);//施設
   re("ミュージ\nアム", x, y+size*7, size, size, musC);
   re("体育館", x+size*6, y+size*7, size*2, size*3, gymC);
@@ -38,8 +36,6 @@ void fac3() {
   re("328\n329\n330", x+size*4, y+size*4, size, size, c328C);
   re("331\n332\n333", x+size*6, y+size*4, size, size, c331C);
   re("334\n335", x+size*7, y+size*4, size, size, c334C);
-  
-
 }
 
 void base3() {
@@ -64,8 +60,8 @@ void floor3() {
       line(i, 3, i, 10);
     }
   }
-  for(int i=5;i<8;i++){
-    le(i,3,i,10);
+  for (int i=5; i<8; i++) {
+    le(i, 3, i, 10);
   }
   for (int j = 3; j < 10; j++) {
     le(0, j, 8, j);
@@ -77,7 +73,7 @@ void floor3() {
   fac3();
 
   fill(0);
-  strokeWeight(ST);
+  strokeWeight(ST);//以下毎階外枠
   le(0, 0, 1, 0);
   le(1, 0, 1, 3);
   le(1, 3, 8, 3);
@@ -86,17 +82,5 @@ void floor3() {
   le(5, 10, 5, 9);
   le(5, 9, 0, 9);
   le(0, 9, 0, 0);
-    strokeWeight(st);
+  strokeWeight(st);
 }
-//void fac3() {
-//  mas(30701);//原点
-//  mas(30901);//ミュージアム
-//  mas(31301);//ライブラリ
-//  mas(31501);
-//  mas(31701);
-//  mas(31901);
-//  mas(32101);
-//  mas(32301);
-//  mas(12301);
-//  mas(90710);
-//}
