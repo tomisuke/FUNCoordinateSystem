@@ -193,8 +193,8 @@ void setup() {
   hideAllButton();
   floorButtonHome.show();
   f3();
-  stairButton();
-  hideStairButton();
+ // stairButton();
+ // hideStairButton();
 }
 void draw() {
   switch(scene) {
@@ -203,6 +203,12 @@ void draw() {
     background(255);
     base();
     navi();
+        for (int i = 0; i < record; i++) {
+      masufillR(way[0][i], way[1][i], size);
+      //println(way[0][i],way[1][i]);
+    }
+        masufillS(masuxyz(h)[0], masuxyz(h)[1], size);
+    masufillD(masuxyz(destination)[0], masuxyz(destination)[1], size);
     break;
   }
 }

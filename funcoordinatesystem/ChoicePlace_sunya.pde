@@ -25,19 +25,17 @@ int mapy(int y) {
   return centerY + size * y;
 }
 
-void masufillS(int size) {
+void masufillS(int x, int y, int size) {
+  int ax = mappoint(x, y)[0];
+  int ay = mappoint(x, y)[1];
   fill(0, 255, 0);
-  rect(mapx(0), mapy(6), size, size);
+  rect(mapx(ax), mapy(ay), size, size);
 }
 void masufillD(int x, int y, int size) {
   int ax = mappoint(x, y)[0];
   int ay = mappoint(x, y)[1];
   fill(255, 0, 0);
   rect(mapx(ax), mapy(ay), size, size);
-  fill(255);
-  textAlign(CENTER, CENTER);
-  text(name, mapx(ax)+size/2, mapy(ay)+size/2);
-  textAlign(LEFT, TOP);
 }
 void masufillR(int x, int y, int size) {
   //int ax = mappoint(x,y)[0];
@@ -65,18 +63,98 @@ void masufillK1() {
 //通った道を保存する二重配列
 int[][] way = new int[2][20];//[0][]はx座標、[1][]がy座標
 int record = 0;
+
+
 void navi() {
+
+  record = 0;
+  int[][] isGoF3 = new int[8][10];
+  isGoF3[1][1] = 1;
+  isGoF3[1][2] = 1;
+  isGoF3[2][3] = 1;
+  isGoF3[3][3] = 1;
+  isGoF3[4][3] = 1;
+  isGoF3[6][3] = 1;
+  isGoF3[7][3] = 1;
+  isGoF3[1][4] = 1;
+  isGoF3[5][4] = 1;
+  isGoF3[1][5] = 1;
+  isGoF3[5][5] = 1;
+  isGoF3[0][6] = 1;
+  isGoF3[2][6] = 1;
+  isGoF3[3][6] = 1;
+  isGoF3[4][6] = 1;
+  isGoF3[6][6] = 1;
+  isGoF3[7][6] = 1;
+  isGoF3[1][7] = 1;
+  isGoF3[5][7] = 1;
+  isGoF3[1][8] = 1;
+  isGoF3[5][8] = 1;
+  isGoF3[5][9] = 1;
+  isGoF3[5][6] = 1;
+  isGoF3[1][6] = 1;
+  isGoF3[5][3] = 1;
+  isGoF3[1][3] = 1;
+
+  int decx, decy;
+  int startX = mappoint(masuxyz(h)[0], masuxyz(h)[1])[0];//現在地のｘ（0）
+  int startY = mappoint(masuxyz(h)[0], masuxyz(h)[1])[1];//現在地のｙ（6）
   if (floor == 3) {
-    masufillS(size);
+    //masufillS(0,0,size);
   }
   if (floor == masuxyz(goal)[2]) {
     masufillD(masuxyz(destination)[0], masuxyz(destination)[1], size);
   }
-  int decx, decy;
-  int startX = mappoint(masuxyz(h)[0], masuxyz(h)[1])[0];//現在地のｘ（0）
-  int startY = mappoint(masuxyz(h)[0], masuxyz(h)[1])[1];//現在地のｙ（6）
-  //まず目的地が３階の場合
+
   if (masuxyz(goal)[2] == 3) {
+    //現在地と目的地goalの座標の差を導出
+    //xは目的地gaolの方が大きいので、目的地ー現在地で
+    decx = mappoint(masuxyz(goal)[0], masuxyz(goal)[1])[0] - startX;
+    //yは目的地の座標が大きいと正、小さいと負になる
+    decy = mappoint(masuxyz(goal)[0], masuxyz(goal)[1])[1] - startY;
+    //println(decx,decy);
+    int check;
+    if (decy >= 0) {
+      check = decx + decy;
+    } else {
+      check = decx - decy;
+    }
+    //println(decy,check);
+    //x,yを+1してぶつかるかぶつからないかを判定してから配列に代入
+
+    while (record < check) {
+
+
+
+      if (decy < 0) {
+        // 下に移動したいとき
+        if (isGoF3[startX][startY - 1] == 1) { // 移動可能なら下へ
+          startY -= 1;
+          decy++; // 下方向への移動を1減らす
+        } else { // 下へ進めないなら右へ
+          startX += 1;
+          decx--;
+        }
+      } else if (decy > 0) {
+        // 上に移動したいとき
+        if (isGoF3[startX][startY + 1] == 1) { // 移動可能なら上へ
+          startY += 1;
+          decy--; // 上方向への移動を1減らす
+        } else { // 上へ進めないなら右へ
+          startX += 1;
+          decx--;
+        }
+      } else {
+        // decy == 0の場合、右方向への移動
+        startX += 1;
+        decx--;
+      }
+
+      // 経路を保存
+      way[0][record] = startX;
+      way[1][record] = startY;
+      record++;
+    }
   } else if (masuxyz(goal)[2] == 4) {//目的地が4階の場合
     if (floor == 3) {
       masufillKU();
@@ -135,10 +213,22 @@ void navi() {
     }
   }
 }
+
+
 void stairButton() {
   f3StairU.addButton("f4N")
     .setLabel("")
     .setPosition(mapx(1), mapy(6))
+    .setSize(size, size)
+    .setColorBackground(transparent)
+    .setColorCaptionLabel(transparent)
+    .setColorBackground(transparent)
+    .setColorLabel(transparent)
+    .setColorForeground(transparent)
+    .setColorActive(transparent);
+  f3StairD.addButton("f2N")
+    .setLabel("")
+    .setPosition(mapx(1), mapy(3))
     .setSize(size, size)
     .setColorBackground(transparent)
     .setColorCaptionLabel(transparent)
