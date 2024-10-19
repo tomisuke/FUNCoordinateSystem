@@ -1,4 +1,4 @@
-void f3Button(){
+void f1Button(){
     fill(0);
   textSize(50);
   //1列目
@@ -147,7 +147,7 @@ void f3Button(){
     //4列
       text("その他", defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY-40);
   f5Button.addButton("F50111")
-    .setLabel("C.Cafe")
+    .setLabel("C.Cafee")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY+(destinationButtonH + betweenH)*0)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)

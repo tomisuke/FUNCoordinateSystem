@@ -14,21 +14,25 @@ void f5() {
 }
 void f4() {
   hidefButton();
-  f5Button.show();
+  f4Button();
+  f4Button.show();
   println("4階を選択");
 }
 void f3() {
   hidefButton();
-  f5Button.show();
+  f3Button();
+  f3Button.show();
   println("3階を選択");
 }
 void f2() {
   hidefButton();
-  f5Button.show();
+  f2Button();
+  f2Button.show();
   println("2階を選択");
 }
 void f1() {
   hidefButton();
-  f5Button.show();
+  f1Button();
+  f1Button.show();
   println("1階を選択");
 }

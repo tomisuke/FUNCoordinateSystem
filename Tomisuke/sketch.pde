@@ -14,12 +14,11 @@ void setup() {
   f4Button = new ControlP5(this);
   f5Button = new ControlP5(this);
   size(1600, 900);
-  fill(0);
+  fill(255);
   rect(0, 0, width, height);
   font = createFont("MS Gothic", 35, true);
   choiceFloor();
 }
 
 void draw() {
-  background(255);
 }

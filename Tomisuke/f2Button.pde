@@ -1,4 +1,4 @@
-void f3Button(){
+void f2Button(){
     fill(0);
   textSize(50);
   //1列目
