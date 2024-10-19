@@ -6,6 +6,8 @@ int st=1;//線の太さ
 int ST=3;//外枠の太さ
 int colorA=90;
 int colorB=0;
+int textsize=20;//テキストサイズの変数を追加した
+int toileColor=#008080;//トイレの色
 
 void center() {//座標左上にずらしました
   centerX=centerX-size*4;
@@ -15,6 +17,17 @@ void center() {//座標左上にずらしました
 void stair(int x, int y) {//おてがる階段入れ関数
   textAlign(CENTER, CENTER);
   text("階段", centerX+size*x-size/2, centerY+size*y+size/2);
+  textAlign(LEFT, TOP);
+}
+
+void wc(int x,int y,int w,int h){//おてがるトイレ入れ関数
+  textAlign(CENTER, CENTER);
+  textSize(10);
+  fill(toileColor);
+  rect(centerX+size*x,centerY+size*y,size*w,size*h);
+  text("wc", centerX+size*x-size/2, centerY+size*y+size/2);
+  fill(100);
+  textSize(textsize);
   textAlign(LEFT, TOP);
 }
 
@@ -46,6 +59,20 @@ void stairs() {//各階の階段を表示する
     stair(6, 3);
     stair(6, 6);
     stair(2, 6);
+  }
+}
+
+void toilet(){//トイレの場所を階段みたいに入れる
+  if(floor==3){
+    wc(2,7,1/2,1);
+  }else if(floor==2){
+    
+  }else if(floor==1){
+    
+  }else if(floor==4){
+    
+  }else if(floor==5){
+  
   }
 }
 
@@ -85,6 +112,7 @@ void base() {//礎
   textAlign(LEFT, TOP);
 
   stairs();//階段入れるやつ
+  toilet();
 }
 
 void keyPressed() {
