@@ -5,6 +5,7 @@ int destinationButtonH = 100;
 int betweenH = 30;
 int betweenW = 40;
 int goal,destination;
+String name;
 
 void pushDestination(){
   println("目的地が設定された");

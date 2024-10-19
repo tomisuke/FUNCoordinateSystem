@@ -52,7 +52,7 @@ void f1Button(){
     .setColorActive(buttonActiveColor);
   //2列目
   text("教室", defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY-40);
-  f1Button.addButton("F11317")
+  f1Button.addButton("F11319")
     .setLabel("アトリエ")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*0)
     .setSize(destinationButtonW, destinationButtonH)
