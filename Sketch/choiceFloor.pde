@@ -6,6 +6,9 @@ int betweenH = 30;
 int betweenW = 40;
 int goal,destination;
 
+void pushDestination(){
+  println("目的地が設定された");
+}
 void hidefButton(){
   f1Button.hide();
   f2Button.hide();
