@@ -1,3 +1,4 @@
+int enterC=255;
 int libC=100;//ライブラリ（以下色の指定）
 int musC=100;//ミュージアム
 int gymC=100;//体育館
@@ -15,26 +16,28 @@ int c328C=100;
 int c331C=100;
 int c334C=100;
 
-void fac3(){
+void fac3() {
   int x=centerX;
   int y=centerY;
-  
-  re("ライブラリ",x,y,size,size*6,libC);//施設
-  re("ミュージアム",x,y+size*7,size,size,musC);
-  re("体育館",x+size*6,y+size*7,size*2,size*3,gymC);
-  re("医務室,音スタ",x+size*2,y+size*8,size,size,medC);
-  re("社会提携センター",x+size*2,y+size*7,size,size,socC);
-  re("大講義室",x+size*6,y+size*5,size*2,size,bigC);//教室
-  re("工房",x+size*4,y+size*7,size,size*2,workC);
-  re("エレ工",x+size*3,y+size*7,size,size*2,eleC);
-  re("365",x+size*4,y+size*5,size,size,c365C);
-  re("364",x+size*3,y+size*5,size,size,c365C);
-  re("363",x+size*2,y+size*5,size,size,c365C);
-  re("322,323,324",x+size*2,y+size*4,size,size,c322C);//研究室とか
-  re("325,326,327",x+size*3,y+size*4,size,size,c325C);
-  re("328,329,330",x+size*4,y+size*4,size,size,c328C);
-  re("331,332,333",x+size*6,y+size*4,size,size,c331C);
-  re("334,335",x+size*7,y+size*4,size,size,c334C);
+
+  re("玄関", x, y+size*25/4, size/3, size/2, enterC);
+
+  re("ライブラリ", x, y, size, size*6, libC);//施設
+  re("ミュージアム", x, y+size*7, size, size, musC);
+  re("体育館", x+size*6, y+size*7, size*2, size*3, gymC);
+  re("医務室,音スタ", x+size*2, y+size*8, size, size, medC);
+  re("社会提携センター", x+size*2, y+size*7, size, size, socC);
+  re("大講義室", x+size*6, y+size*5, size*2, size, bigC);//教室
+  re("工房", x+size*4, y+size*7, size, size*2, workC);
+  re("えれ工", x+size*3, y+size*7, size, size*2, eleC);
+  re("365", x+size*4, y+size*5, size, size, c365C);
+  re("364", x+size*3, y+size*5, size, size, c365C);
+  re("363", x+size*2, y+size*5, size, size, c365C);
+  re("322,323,324", x+size*2, y+size*4, size, size, c322C);//研究室とか
+  re("325,326,327", x+size*3, y+size*4, size, size, c325C);
+  re("328,329,330", x+size*4, y+size*4, size, size, c328C);
+  re("331,332,333", x+size*6, y+size*4, size, size, c331C);
+  re("334,335", x+size*7, y+size*4, size, size, c334C);
 }
 
 void base3() {
@@ -72,14 +75,14 @@ void floor3() {
 
   fill(0);
   strokeWeight(ST);
-  line(centerX,centerY,centerX+size,centerY);
-  line(centerX+size,centerY,centerX+size,centerY+size*3);
-  line(centerX+size,centerY+size*3,centerX+size*8,centerY+size*3);
-  line(centerX+size*8,centerY+size*3,centerX+size*8,centerY+size*10);
-  line(centerX+size*8,centerY+size*10,centerX+size*5,centerY+size*10);
-  line(centerX+size*5,centerY+size*10,centerX+size*5,centerY+size*9);
-  line(centerX+size*5,centerY+size*9,centerX,centerY+size*9);
-  line(centerX,centerY+size*9,centerX,centerY);
+  line(centerX, centerY, centerX+size, centerY);
+  line(centerX+size, centerY, centerX+size, centerY+size*3);
+  line(centerX+size, centerY+size*3, centerX+size*8, centerY+size*3);
+  line(centerX+size*8, centerY+size*3, centerX+size*8, centerY+size*10);
+  line(centerX+size*8, centerY+size*10, centerX+size*5, centerY+size*10);
+  line(centerX+size*5, centerY+size*10, centerX+size*5, centerY+size*9);
+  line(centerX+size*5, centerY+size*9, centerX, centerY+size*9);
+  line(centerX, centerY+size*9, centerX, centerY);
 }
 
 //void fac3() {

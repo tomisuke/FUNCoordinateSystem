@@ -1,12 +1,16 @@
-int floor=3;//仮置き
+int floor=1;//仮置き
 int size=75;//スペースの長さ
-int centerX=800;
+int centerX=800;//方眼紙の中央の座標です。
 int centerY=450;
 int st=1;//線の太さ
-int ST=3;
+int ST=3;//外枠の太さ
 int colorA=90;
 int colorB=0;
 
+void center() {//座標左上にずらしました
+  centerX=centerX-size*4;
+  centerY=centerY-size*5;
+}
 
 void re(String s,int x,int y,int w,int h,int f1){
   fill(f1);
@@ -17,8 +21,6 @@ void re(String s,int x,int y,int w,int h,int f1){
   textAlign(LEFT,TOP);
 }
 
-void fac2() {
-}
 
 void base() {
   textAlign(CENTER, CENTER);
@@ -37,12 +39,6 @@ void base() {
     floor5();
   }
   textAlign(LEFT, TOP);
-}
-
-
-void center() {
-  centerX=centerX-size*4;
-  centerY=centerY-size*5;
 }
 
 void keyPressed() {

@@ -4,8 +4,8 @@
   //1列目
   text("教員室", defaultButtonX, defaultButtonY-40);
   f2Button.setFont(font);
-  f2Button.addButton("F50511")
-    .setLabel("522,523,524")
+  f2Button.addButton("F20513")
+    .setLabel("222,223,224")
     .setPosition(defaultButtonX, defaultButtonY+(destinationButtonH + betweenH)*0)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
@@ -13,8 +13,8 @@
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f2Button.addButton("F50711")
-    .setLabel("525,526,527")
+  f2Button.addButton("F20713")
+    .setLabel("225,226,227")
     .setPosition(defaultButtonX, defaultButtonY+(destinationButtonH + betweenH)*1)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
@@ -23,8 +23,8 @@
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
 
-  f2Button.addButton("F50911")
-    .setLabel("528,529")
+  f2Button.addButton("F20913")
+    .setLabel("228,229,230")
     .setPosition(defaultButtonX, defaultButtonY+(destinationButtonH + betweenH)*2)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
@@ -32,8 +32,8 @@
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f2Button.addButton("F51311")
-    .setLabel("531,532,533")
+  f2Button.addButton("F21313")
+    .setLabel("231,232,233")
     .setPosition(defaultButtonX, defaultButtonY+(destinationButtonH + betweenH)*3)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
@@ -41,8 +41,8 @@
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f2Button.addButton("F51511")
-    .setLabel("534,535,536")
+  f2Button.addButton("F21513")
+    .setLabel("234,235")
     .setPosition(defaultButtonX, defaultButtonY+(destinationButtonH + betweenH)*4)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
@@ -50,7 +50,7 @@
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  //2列目
+  //2列目ない！！！！！！！！
   text("教室", defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY-40);
   f2Button.addButton("F50507")
     .setLabel("583")
@@ -106,7 +106,7 @@
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  //3列目
+  //3列目ない！！！！！！！
   text("サークル室", defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY-40);
   f2Button.addButton("F51103")
     .setLabel("01,02,03")
@@ -146,8 +146,8 @@
     .setColorActive(buttonActiveColor);
     //4列
       text("その他", defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY-40);
-  f2Button.addButton("F50111")
-    .setLabel("C.Cafe2")
+  f2Button.addButton("F20115")
+    .setLabel("購買")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY+(destinationButtonH + betweenH)*0)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
@@ -155,18 +155,9 @@
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f2Button.addButton("F50115")
-    .setLabel("講堂")
+  f2Button.addButton("F20113")
+    .setLabel("生協事務所")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY+(destinationButtonH + betweenH)*1)
-    .setSize(destinationButtonW, destinationButtonH)
-    .setColorCaptionLabel(labelColor)
-    .setColorBackground(buttonColor)
-    .setColorForeground(buttonForegroundColor)
-    .setColorLabel(#ffffff)
-    .setColorActive(buttonActiveColor);
-  f2Button.addButton("F50105")
-    .setLabel("共同研究室")
-    .setPosition(defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY+(destinationButtonH + betweenH)*2)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
