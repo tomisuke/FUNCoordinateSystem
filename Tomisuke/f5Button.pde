@@ -11,7 +11,7 @@ void f5Button() {
   //1列目
   text("教員室", defaultButtonX, defaultButtonY-40);
   f5Button.setFont(font);
-  f5Button.addButton("F50511")
+  f5Button.addButton("F50509")
     .setLabel("522,523,524")
     .setPosition(defaultButtonX, defaultButtonY+(destinationButtonH + betweenH)*0)
     .setSize(destinationButtonW, destinationButtonH)
@@ -20,7 +20,7 @@ void f5Button() {
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f5Button.addButton("F50711")
+  f5Button.addButton("F50709")
     .setLabel("525,526,527")
     .setPosition(defaultButtonX, defaultButtonY+(destinationButtonH + betweenH)*1)
     .setSize(destinationButtonW, destinationButtonH)
@@ -30,7 +30,7 @@ void f5Button() {
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
 
-  f5Button.addButton("F50911")
+  f5Button.addButton("F50909")
     .setLabel("528,529")
     .setPosition(defaultButtonX, defaultButtonY+(destinationButtonH + betweenH)*2)
     .setSize(destinationButtonW, destinationButtonH)
@@ -39,7 +39,7 @@ void f5Button() {
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f5Button.addButton("F51311")
+  f5Button.addButton("F51309")
     .setLabel("531,532,533")
     .setPosition(defaultButtonX, defaultButtonY+(destinationButtonH + betweenH)*3)
     .setSize(destinationButtonW, destinationButtonH)
@@ -48,7 +48,7 @@ void f5Button() {
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f5Button.addButton("F51511")
+  f5Button.addButton("F51509")
     .setLabel("534,535,536")
     .setPosition(defaultButtonX, defaultButtonY+(destinationButtonH + betweenH)*4)
     .setSize(destinationButtonW, destinationButtonH)
@@ -59,7 +59,7 @@ void f5Button() {
     .setColorActive(buttonActiveColor);
   //2列目
   text("教室", defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY-40);
-  f5Button.addButton("F50507")
+  f5Button.addButton("F50505")
     .setLabel("583")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*0)
     .setSize(destinationButtonW, destinationButtonH)
@@ -68,7 +68,7 @@ void f5Button() {
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f5Button.addButton("F50707")
+  f5Button.addButton("F50705")
     .setLabel("584")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*1)
     .setSize(destinationButtonW, destinationButtonH)
@@ -77,7 +77,7 @@ void f5Button() {
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f5Button.addButton("F50907")
+  f5Button.addButton("F50905")
     .setLabel("585")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*2)
     .setSize(destinationButtonW, destinationButtonH)
@@ -86,7 +86,7 @@ void f5Button() {
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f5Button.addButton("F50505")
+  f5Button.addButton("F50503")
     .setLabel("593")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*3)
     .setSize(destinationButtonW, destinationButtonH)
@@ -95,7 +95,7 @@ void f5Button() {
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f5Button.addButton("F50705")
+  f5Button.addButton("F50703")
     .setLabel("594")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*4)
     .setSize(destinationButtonW, destinationButtonH)
@@ -104,7 +104,7 @@ void f5Button() {
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f5Button.addButton("F50905")
+  f5Button.addButton("F50903")
     .setLabel("595")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*5)
     .setSize(destinationButtonW, destinationButtonH)
@@ -152,7 +152,7 @@ void f5Button() {
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
     //4列
-      text("その他", defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY-40);
+      text("施設", defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY-40);
   f5Button.addButton("F50111")
     .setLabel("C.Cafe5")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY+(destinationButtonH + betweenH)*0)

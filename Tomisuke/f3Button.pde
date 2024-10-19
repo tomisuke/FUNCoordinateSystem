@@ -1,5 +1,5 @@
-void f3Button(){
-    fill(0);
+void f3Button() {
+  fill(0);
   textSize(50);
   //1列目
   text("教員室", defaultButtonX, defaultButtonY-40);
@@ -51,7 +51,7 @@ void f3Button(){
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
   //2列目
-  text("教室(mac室)", defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY-40);
+  text("教室", defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY-40);
   f3Button.addButton("F30509")
     .setLabel("363")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*0)
@@ -89,9 +89,9 @@ void f3Button(){
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
   //3列目
-  text("サークル室", defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY-40);
-  f3Button.addButton("F51103")
-    .setLabel("01,02,03")
+  text("施設", defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY-40);
+  f3Button.addButton("F30109")
+    .setLabel("情報ライブラリ")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY+(destinationButtonH + betweenH)*0)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
@@ -99,8 +99,8 @@ void f3Button(){
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f3Button.addButton("F51101")
-    .setLabel("4,5,6,7")
+  f3Button.addButton("F30105")
+    .setLabel("ミュージアム")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY+(destinationButtonH + betweenH)*1)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
@@ -108,8 +108,8 @@ void f3Button(){
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f3Button.addButton("F51301")
-    .setLabel("8,9,10,11")
+  f3Button.addButton("F30503")
+    .setLabel("音スタ,医務室")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY+(destinationButtonH + betweenH)*2)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
@@ -117,8 +117,8 @@ void f3Button(){
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f3Button.addButton("F51501")
-    .setLabel("12,13,14,15")
+  f3Button.addButton("F30705")
+    .setLabel("ｴﾚｸﾄﾛﾆｸｽ工房")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY+(destinationButtonH + betweenH)*3)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
@@ -126,29 +126,29 @@ void f3Button(){
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-    //4列
-      text("その他", defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY-40);
-  f3Button.addButton("F50111")
-    .setLabel("C.Cafe3")
+  f3Button.addButton("F30905")
+    .setLabel("工房")
+    .setPosition(defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY+(destinationButtonH + betweenH)*4)
+    .setSize(destinationButtonW, destinationButtonH)
+    .setColorCaptionLabel(labelColor)
+    .setColorBackground(buttonColor)
+    .setColorForeground(buttonForegroundColor)
+    .setColorLabel(#ffffff)
+    .setColorActive(buttonActiveColor);
+  f3Button.addButton("F30505")
+    .setLabel("社会連携センター")
+    .setPosition(defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY+(destinationButtonH + betweenH)*5)
+    .setSize(destinationButtonW, destinationButtonH)
+    .setColorCaptionLabel(labelColor)
+    .setColorBackground(buttonColor)
+    .setColorForeground(buttonForegroundColor)
+    .setColorLabel(#ffffff)
+    .setColorActive(buttonActiveColor);
+  //4列
+  //text("その他", defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY-40);
+  f3Button.addButton("F11305")
+    .setLabel("体育館")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY+(destinationButtonH + betweenH)*0)
-    .setSize(destinationButtonW, destinationButtonH)
-    .setColorCaptionLabel(labelColor)
-    .setColorBackground(buttonColor)
-    .setColorForeground(buttonForegroundColor)
-    .setColorLabel(#ffffff)
-    .setColorActive(buttonActiveColor);
-  f3Button.addButton("F50115")
-    .setLabel("講堂")
-    .setPosition(defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY+(destinationButtonH + betweenH)*1)
-    .setSize(destinationButtonW, destinationButtonH)
-    .setColorCaptionLabel(labelColor)
-    .setColorBackground(buttonColor)
-    .setColorForeground(buttonForegroundColor)
-    .setColorLabel(#ffffff)
-    .setColorActive(buttonActiveColor);
-  f3Button.addButton("F50105")
-    .setLabel("共同研究室")
-    .setPosition(defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY+(destinationButtonH + betweenH)*2)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
