@@ -154,7 +154,7 @@ void f5Button() {
     //4列
       text("その他", defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY-40);
   f5Button.addButton("F50111")
-    .setLabel("C.Cafe")
+    .setLabel("C.Cafe5")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY+(destinationButtonH + betweenH)*0)
     .setSize(destinationButtonW, destinationButtonH)
     .setColorCaptionLabel(labelColor)
