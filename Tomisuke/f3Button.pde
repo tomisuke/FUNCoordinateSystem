@@ -41,7 +41,7 @@ void f3Button() {
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f3Button.addButton("F51311")
+  f3Button.addButton("F31311")
     .setLabel("321,322,333")
     .setPosition(defaultButtonX, defaultButtonY+(destinationButtonH + betweenH)*4)
     .setSize(destinationButtonW, destinationButtonH)
@@ -61,7 +61,7 @@ void f3Button() {
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f3Button.addButton("F50709")
+  f3Button.addButton("F30709")
     .setLabel("364")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*1)
     .setSize(destinationButtonW, destinationButtonH)
@@ -70,7 +70,7 @@ void f3Button() {
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-  f3Button.addButton("F50909")
+  f3Button.addButton("F30909")
     .setLabel("365")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*2)
     .setSize(destinationButtonW, destinationButtonH)
