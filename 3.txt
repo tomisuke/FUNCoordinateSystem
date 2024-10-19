@@ -1,0 +1,31 @@
+3階	
+施設系	情報ライブラリ
+	ミュージアム
+	体育館
+	医務室
+	音スタ
+	社会連携センター
+
+教室系	大講義室
+	363
+	364
+	365
+
+教員室	322()
+	323(jamisato)
+	324(m-nambu)
+	
+	325(itokiyo);
+	326(noyuri)
+	327(nakata)
+	
+	328(siraisi)
+	329(s-takagi)
+	330(kurikawa)
+
+	331(sho-yama)
+	332(kei)
+	333(hanada)
+
+	334(sakura)
+	335()
