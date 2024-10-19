@@ -46,3 +46,32 @@ void isGoF2() {
   isGoF2[6][4] = 1;
   isGoF2[7][4] = 1;
 }
+void isGoF3() {
+  int[][] isGoF3 = new int[8][4];
+  isGoF3[1][1] = 1;
+  isGoF3[1][2] = 1;
+  isGoF3[1][3] = 2;
+  isGoF3[2][3] = 1;
+  isGoF3[3][3] = 1;
+  isGoF3[4][3] = 1;
+  isGoF3[5][3] = 2;
+  isGoF3[6][3] = 1;
+  isGoF3[7][3] = 1;
+  isGoF3[1][4] = 1;
+  isGoF3[5][4] = 1;
+  isGoF3[1][5] = 1;
+  isGoF3[5][5] = 1;
+  isGoF3[0][6] = 1;
+  isGoF3[1][6] = 2;
+  isGoF3[2][6] = 1;
+  isGoF3[3][6] = 1;
+  isGoF3[4][6] = 1;
+  isGoF3[5][6] = 2;
+  isGoF3[6][6] = 1;
+  isGoF3[7][6] = 1;
+  isGoF3[1][7] = 1;
+  isGoF3[5][7] = 1;
+  isGoF3[1][8] = 1;
+  isGoF3[5][8] = 1;
+  isGoF3[5][9] = 1;
+}
