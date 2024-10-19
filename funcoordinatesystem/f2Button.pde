@@ -2,7 +2,7 @@ void f2Button() {
   fill(0);
   textSize(50);
   //1列目
-  text("教員室", defaultButtonX, defaultButtonY-40);
+  text("教員室", defaultButtonX, defaultButtonY-titleBuffer);
   f2Button.setFont(font);
   f2Button.addButton("F20513")
     .setLabel("222,223,224")
@@ -51,7 +51,7 @@ void f2Button() {
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
   //2列
-  text("施設", defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY-40);
+  text("施設", defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY-titleBuffer);
   f2Button.addButton("F20115")
     .setLabel("購買")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*0)

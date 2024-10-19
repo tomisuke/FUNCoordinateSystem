@@ -1,5 +1,5 @@
 void F40511() {
-  name="422,423,424教員室";
+  name="422\n423\n424";
   hidefButton();
   background(255);
   pushDestination();
@@ -7,8 +7,8 @@ void F40511() {
   destination = 40511;
 }
 
-void F40711() {//425,426,427教員室
-  name="425,426,427教員室";
+void F40711() {//425\n426\n427
+  name="425\n426\n427";
   hidefButton();
   background(255);
   pushDestination();
@@ -16,8 +16,8 @@ void F40711() {//425,426,427教員室
   destination = 40711;
 }
 
-void F40911() {//428,429教員室
-  name="428,429教員室";
+void F40911() {//428\n429
+  name="428\n429";
   hidefButton();
   background(255);
   pushDestination();
@@ -26,7 +26,7 @@ void F40911() {//428,429教員室
 }
 
 void F41311() {
-  name="431,432,433教員室";
+  name="431\n432\n433";
   hidefButton();
   background(255);
   pushDestination();
@@ -35,7 +35,7 @@ void F41311() {
 }
 
 void F41511() {
-  name="434,435,435教員室";
+  name="434\n435\n435";
   hidefButton();
   background(255);
   pushDestination();

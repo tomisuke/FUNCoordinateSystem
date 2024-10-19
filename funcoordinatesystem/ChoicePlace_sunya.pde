@@ -35,9 +35,9 @@ void masufillD(int x, int y, int size) {
   fill(255, 0, 0);
   rect(mapx(ax), mapy(ay), size, size);
   fill(255);
-  textAlign(CENTER,CENTER);
-  text(name,mapx(ax)+size/2, mapy(ay)+size/2);
-  textAlign(LEFT,TOP);
+  textAlign(CENTER, CENTER);
+  text(name, mapx(ax)+size/2, mapy(ay)+size/2);
+  textAlign(LEFT, TOP);
 }
 void masufillR(int x, int y, int size) {
   //int ax = mappoint(x,y)[0];
@@ -90,6 +90,7 @@ void navi() {
   } else if (masuxyz(goal)[2] == 5) {//目的地が5階の場合
     if (floor == 3) {
       masufillKU();
+      f3StairU.show();
       textAlign(CENTER, CENTER);
       fill(0);
       text("4階へ", centerX+size*2-size/2, centerY+size*6+size/2);
@@ -107,6 +108,7 @@ void navi() {
     if (floor == 2) {
       masufillK2();
     } else if (floor == 3) {
+      f3StairD.show();
       masufillKD();
       textAlign(CENTER, CENTER);
       fill(0);
@@ -118,6 +120,7 @@ void navi() {
       masufillKD();
       textAlign(CENTER, CENTER);
       fill(0);
+      f3StairD.show();
       text("2階へ", centerX+size*2-size/2, centerY+size*3+size/2);
       textAlign(LEFT, TOP);
     } else if (floor == 2) {
@@ -131,4 +134,30 @@ void navi() {
       masufillK1();
     }
   }
+}
+void stairButton() {
+  f3StairU.addButton("f4N")
+    .setLabel("")
+    .setPosition(mapx(1), mapy(6))
+    .setSize(size, size)
+    .setColorBackground(transparent)
+    .setColorCaptionLabel(transparent)
+    .setColorBackground(transparent)
+    .setColorLabel(transparent)
+    .setColorForeground(transparent)
+    .setColorActive(transparent);
+  f3StairD.addButton("f2N")
+    .setLabel("")
+    .setPosition(mapx(1), mapy(3))
+    .setSize(size, size)
+    .setColorBackground(transparent)
+    .setColorCaptionLabel(transparent)
+    .setColorBackground(transparent)
+    .setColorLabel(transparent)
+    .setColorForeground(transparent)
+    .setColorActive(transparent);
+}
+void hideStairButton() {
+  f3StairU.hide();
+  f3StairD.hide();
 }

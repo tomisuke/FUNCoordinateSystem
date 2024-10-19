@@ -2,7 +2,7 @@ void f5Button() {
   fill(0);
   textSize(50);
   //1列目
-  text("教員室", defaultButtonX, defaultButtonY-40);
+  text("教員室", defaultButtonX, defaultButtonY-titleBuffer);
   f5Button.setFont(font);
   f5Button.addButton("F50509")
     .setLabel("522,523,524")
@@ -51,7 +51,7 @@ void f5Button() {
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
   //2列目
-  text("教室", defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY-40);
+  text("教室", defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY-titleBuffer);
   f5Button.addButton("F50505")
     .setLabel("583")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*0)
@@ -107,7 +107,7 @@ void f5Button() {
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
   //3列目
-  text("サークル室", defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY-40);
+  text("サークル室", defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY-titleBuffer);
   f5Button.addButton("F51103")
     .setLabel("01,02,03")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY+(destinationButtonH + betweenH)*0)
@@ -145,7 +145,7 @@ void f5Button() {
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
     //4列
-      text("施設", defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY-40);
+      text("施設", defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY-titleBuffer);
   f5Button.addButton("F50111")
     .setLabel("C.Cafe5")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY+(destinationButtonH + betweenH)*0)

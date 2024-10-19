@@ -62,26 +62,31 @@ void f5N() {
   background(255);
   floor = 5;
   println("5階を選択");
+  hideStairButton();
 }
 void f4N() {
   background(255);
   floor = 4;
   println("4階を選択");
+  hideStairButton();
 }
 void f3N() {
   background(255);
   floor = 3;
   println("3階を選択");
+  hideStairButton();
 }
 void f2N() {
   background(255);
   floor = 2;
   println("2階を選択");
+  hideStairButton();
 }
 void f1N() {
   background(255);
   floor = 1;
   println("1階を選択");
+  hideStairButton();
 }
 void back() {
   scene = 0;
@@ -90,4 +95,5 @@ void back() {
   f3();
   floorButtonHome.show();
   println("ホームに戻った");
+  hideStairButton();
 }

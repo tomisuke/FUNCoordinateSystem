@@ -6,9 +6,12 @@ ControlP5 f2Button;
 ControlP5 f3Button;
 ControlP5 f4Button;
 ControlP5 f5Button;
+
 ControlP5 f2Stair;
 ControlP5 f3StairU;
 ControlP5 f3StairD;
+ControlP5 f4Stair;
+
 
 int scene = 0;
 //マップ系グローバル変数
@@ -28,6 +31,7 @@ int destinationButtonH = 100;
 int betweenH = 30;
 int betweenW = 40;
 int goal, destination;
+int titleBuffer = 60;
 String name;
 //ボタンの色
 int labelColor = 255;
@@ -36,6 +40,7 @@ int buttonForegroundColor = #994444; //frowMouse
 int buttonActiveColor = #330000;//pressed
 int objectColor = #550000;
 int h = 30007;//現在地
+int transparent = color(0, 0, 0, 1);
 
 PFont font;
 PFont font40;
@@ -47,6 +52,12 @@ void setup() {
   f3Button = new ControlP5(this);
   f4Button = new ControlP5(this);
   f5Button = new ControlP5(this);
+  f2Stair = new ControlP5(this);
+  f3StairU = new ControlP5(this);
+  f3StairD = new ControlP5(this);
+  f4Stair = new ControlP5(this);
+
+  textAlign(LEFT, TOP);
   int[][] isGoF1 = new int[8][10];
   isGoF1[1][0] = 1;
   isGoF1[2][0] = 1;
@@ -182,6 +193,8 @@ void setup() {
   hideAllButton();
   floorButtonHome.show();
   f3();
+  stairButton();
+  hideStairButton();
 }
 void draw() {
   switch(scene) {
