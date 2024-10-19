@@ -6,17 +6,15 @@ int st=1;//線の太さ
 int ST=3;//外枠の太さ
 int colorA=90;
 int colorB=0;
+int toiletColor=#008080;
 
 void center() {//座標左上にずらしました
   centerX=centerX-size*4;
   centerY=centerY-size*5;
 }
 
-void elevator(){//エレベーターを設置
-  if(floor>2){
-    
-  }
-  
+void te(String s,int x,int y){
+  text(s,centerX+size*x,centerY+size*y);
 }
 
 void re(String s,int x,int y,int w,int h,int f1){
@@ -27,6 +25,8 @@ void re(String s,int x,int y,int w,int h,int f1){
   text(s,x+w/2,y+h/2);
   textAlign(LEFT,TOP);
 }
+
+
 
 void le(int x1,int y1,int x2,int y2){//lineを引く省略のための関数
   line(centerX+size*x1,centerY+size*y1,centerX+size*x2,centerY+size*y2);

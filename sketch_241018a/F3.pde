@@ -19,27 +19,27 @@ int c334C=100;
 void fac3() {
   int x=centerX;
   int y=centerY;
+  
+  re("玄関", x, y+size*6, size, size, enterC);
 
-  re("玄関", x, y+size*25/4, size/3, size/2, enterC);
-
-  re("ライブラリ", x, y, size, size*6, libC);//施設
-  re("ミュージアム", x, y+size*7, size, size, musC);
+  re("ライブ\nラリ", x, y, size, size*6, libC);//施設
+  re("ミュージ\nアム", x, y+size*7, size, size, musC);
   re("体育館", x+size*6, y+size*7, size*2, size*3, gymC);
-  re("医務室,音スタ", x+size*2, y+size*8, size, size, medC);
-  re("社会提携センター", x+size*2, y+size*7, size, size, socC);
+  re("医務室\n音スタ", x+size*2, y+size*8, size, size, medC);
+  re("社会\n提携\nセンター", x+size*2, y+size*7, size, size, socC);
   re("大講義室", x+size*6, y+size*5, size*2, size, bigC);//教室
   re("工房", x+size*4, y+size*7, size, size*2, workC);
-  re("えれ工", x+size*3, y+size*7, size, size*2, eleC);
+  re("エレ工", x+size*3, y+size*7, size, size*2, eleC);
   re("365", x+size*4, y+size*5, size, size, c365C);
   re("364", x+size*3, y+size*5, size, size, c365C);
   re("363", x+size*2, y+size*5, size, size, c365C);
-  re("322,323,324", x+size*2, y+size*4, size, size, c322C);//研究室とか
-  re("325,326,327", x+size*3, y+size*4, size, size, c325C);
-  re("328,329,330", x+size*4, y+size*4, size, size, c328C);
-  re("331,332,333", x+size*6, y+size*4, size, size, c331C);
-  re("334,335", x+size*7, y+size*4, size, size, c334C);
+  re("322\n323\n324", x+size*2, y+size*4, size, size, c322C);//研究室とか
+  re("325\n326\n327", x+size*3, y+size*4, size, size, c325C);
+  re("328\n329\n330", x+size*4, y+size*4, size, size, c328C);
+  re("331\n332\n333", x+size*6, y+size*4, size, size, c331C);
+  re("334\n335", x+size*7, y+size*4, size, size, c334C);
   
-  elevator();
+
 }
 
 void base3() {
@@ -64,6 +64,9 @@ void floor3() {
       line(i, 3, i, 10);
     }
   }
+  for(int i=5;i<8;i++){
+    le(i,3,i,10);
+  }
   for (int j = 3; j < 10; j++) {
     le(0, j, 8, j);
     if (j < 6) {
@@ -71,8 +74,6 @@ void floor3() {
     }
     le(5, 10, 8, 10);
   }
-
-  strokeWeight(st);
   fac3();
 
   fill(0);
@@ -85,6 +86,7 @@ void floor3() {
   le(5, 10, 5, 9);
   le(5, 9, 0, 9);
   le(0, 9, 0, 0);
+    strokeWeight(st);
 }
 //void fac3() {
 //  mas(30701);//原点
