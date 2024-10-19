@@ -1,4 +1,4 @@
-int floor=1;//仮置き
+int floor=4;//仮置き
 int size=75;//スペースの長さ
 int centerX=800;//方眼紙の中央の座標です。
 int centerY=450;
@@ -21,6 +21,13 @@ void re(String s,int x,int y,int w,int h,int f1){
   textAlign(LEFT,TOP);
 }
 
+void le(int x1,int y1,int x2,int y2){//lineを引く省略のための関数
+  line(centerX+size*x1,centerY+size*y1,centerX+size*x2,centerY+size*y2);
+}
+
+void ce(int x1,int y1,int x2,int y2){//rectを省略のための関数
+  rect(centerX+size*x1,centerY+size*y1,size*x2,size*y2);
+}
 
 void base() {
   textAlign(CENTER, CENTER);

@@ -55,19 +55,19 @@ void floor3() {
     strokeWeight(st);
     stroke(0);
     if (i<2) {
-      line(centerX+size*i, centerY, centerX+size*i, centerY+size*9);
+      le(i, 0, i, 9);
     } else if (i<5) {
-      line(centerX+size*i, centerY+size*3, centerX+size*i, centerY+size*9);
+      le(i, 3, i, 9);
     } else {
-      line(centerX+size*i, centerY+size*3, centerX+size*i, centerY+size*10);
+      line(i, 3, i, 10);
     }
   }
-  for (int j=3; j<10; j++) {
-    line(centerX, centerY+size*j, centerX+size*8, centerY+size*j);
-    if (j<6) {
-      line(centerX, centerY+size*(j-3), centerX+size, centerY+size*(j-3));
+  for (int j = 3; j < 10; j++) {
+    le(0, j, 8, j);
+    if (j < 6) {
+      le(0, j - 3, 1, j - 3);
     }
-    line(centerX+size*5, centerY+size*10, centerX+size*8, centerY+size*10);
+    le(5, 10, 8, 10);
   }
 
   strokeWeight(st);
@@ -75,16 +75,15 @@ void floor3() {
 
   fill(0);
   strokeWeight(ST);
-  line(centerX, centerY, centerX+size, centerY);
-  line(centerX+size, centerY, centerX+size, centerY+size*3);
-  line(centerX+size, centerY+size*3, centerX+size*8, centerY+size*3);
-  line(centerX+size*8, centerY+size*3, centerX+size*8, centerY+size*10);
-  line(centerX+size*8, centerY+size*10, centerX+size*5, centerY+size*10);
-  line(centerX+size*5, centerY+size*10, centerX+size*5, centerY+size*9);
-  line(centerX+size*5, centerY+size*9, centerX, centerY+size*9);
-  line(centerX, centerY+size*9, centerX, centerY);
+  le(0, 0, 1, 0);
+  le(1, 0, 1, 3);
+  le(1, 3, 8, 3);
+  le(8, 3, 8, 10);
+  le(8, 10, 5, 10);
+  le(5, 10, 5, 9);
+  le(5, 9, 0, 9);
+  le(0, 9, 0, 0);
 }
-
 //void fac3() {
 //  mas(30701);//原点
 //  mas(30901);//ミュージアム
