@@ -16,17 +16,18 @@ void center() {//座標左上にずらしました
 
 void stair(int x, int y) {//おてがる階段入れ関数
   textAlign(CENTER, CENTER);
+  fill(0);
   text("階段", centerX+size*x-size/2, centerY+size*y+size/2);
   textAlign(LEFT, TOP);
 }
 
-void wc(int x,int y,int w,int h){//おてがるトイレ入れ関数
+void wc(String s, int x, int y, int w, int h) {//おてがるトイレ入れ関数
   textAlign(CENTER, CENTER);
-  textSize(10);
+  textSize(12);
   fill(toileColor);
-  rect(centerX+size*x,centerY+size*y,size*w,size*h);
-  text("wc", centerX+size*x-size/2, centerY+size*y+size/2);
-  fill(100);
+  rect(centerX+x, centerY+y, w, h);
+  fill(0);
+  text(s, centerX+x+w/2, centerY+y+h/2);
   textSize(textsize);
   textAlign(LEFT, TOP);
 }
@@ -62,17 +63,29 @@ void stairs() {//各階の階段を表示する
   }
 }
 
-void toilet(){//トイレの場所を階段みたいに入れる
-  if(floor==3){
-    wc(2,7,1/2,1);
-  }else if(floor==2){
-    
-  }else if(floor==1){
-    
-  }else if(floor==4){
-    
-  }else if(floor==5){
-  
+void toilet() {//トイレの場所を階段みたいに入れる
+  if (floor==3) {
+    wc("wc", size*4/3, size*14/3, size*2/3, size*1/3);
+    wc("wc", size*5/3, size*5, size*1/3, size*2/3);
+    wc("", size*4/3, size*7, size*1/3, size);
+    wc("wc", size*16/3, size*13/3, size*2/3, size*2/3);
+    wc("", size*16/3, size*25/3, size*2/3, size*2/3);
+  } else if (floor==2) {
+    wc("wc", size*4/3, size*11/3, size*2/3, size*1/3);
+    wc("", size*16/3, size*3, size*1/3, size);
+  } else if (floor==1) {
+    wc("wc", size*4/3, size*8/3, size*2/3, size*1/3);
+    wc("", size*16/3, size*2, size*1/3, size);
+  } else if (floor==4) {
+    wc("wc", size, size*4, size*1/3, size*2/3);
+    wc("", size*4/3, size*7, size*1/3, size);
+    wc("wc", size*5, size*4, size*1/3, size*2/3);
+    wc("", size*5, size*25/3, size*1/3, size*2/3);
+  } else if (floor==5) {
+    wc("wc", size, size*7, size*1/3, size);
+    wc("wc", size*5, size*7, size*1/3, size);
+    wc("wc", size*5, size*5, size*1/3, size);
+    wc("wc", size*1/3, size*11/3, size*1/3, size*1/3);
   }
 }
 
@@ -111,8 +124,8 @@ void base() {//礎
   }
   textAlign(LEFT, TOP);
 
+  toilet();//トイレ入れるやつ
   stairs();//階段入れるやつ
-  toilet();
 }
 
 void keyPressed() {
