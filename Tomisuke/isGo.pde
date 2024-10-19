@@ -114,4 +114,13 @@ void isGo() {
   isGoF5[5][6] = 2;
   isGoF5[6][6] = 1;
   isGoF5[7][6] = 1;
+  isGoF5[1][7] = 1;
+  isGoF5[2][7] = 1;
+  isGoF5[3][7] = 1;
+  isGoF5[4][7] = 1;
+  isGoF5[5][7] = 1;
+  isGoF5[5][8] = 1;
+  isGoF5[5][9] = 1;
+  isGoF5[6][9] = 1;
+  isGoF5[7][9] = 1;
 }
