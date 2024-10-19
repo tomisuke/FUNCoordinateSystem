@@ -12,6 +12,13 @@ void center() {//座標左上にずらしました
   centerY=centerY-size*5;
 }
 
+void elevator(){//エレベーターを設置
+  if(floor>2){
+    
+  }
+  
+}
+
 void re(String s,int x,int y,int w,int h,int f1){
   fill(f1);
   rect(x,y,w,h);

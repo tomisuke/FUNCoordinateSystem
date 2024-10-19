@@ -17,6 +17,8 @@ void fac2() {
   re("234,235,236", x+size*7, y+size*3, size, size, c234C);
   re("購買", x, y+size*2, size, size, buyC);
   re("生協事務局", x, y+size*3, size, size, buysC);
+  
+  elevator();
 }
 
 void floor2() {

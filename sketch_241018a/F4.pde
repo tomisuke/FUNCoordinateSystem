@@ -33,6 +33,8 @@ void fac4() {
   re("493", x+size*2, y+size*8, size, size, c493C);
   re("494", x+size*3, y+size*8, size, size, c494C);
   re("495", x+size*4, y+size*8, size, size, c495C);
+  
+  elevator();
 }
 
 void floor4() {

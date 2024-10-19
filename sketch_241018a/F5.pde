@@ -31,6 +31,8 @@ void fac5() {
   re("528,529", x+size*4, y+size*5, size, size, c528C);
   re("531,532,533", x+size*6, y+size*5, size, size, c531C);
   re("534,535,536", x+size*7, y+size*5, size, size, c534C);
+  
+  elevator();
 }
 void floor5() {
   ce(0, 1, 1, 5);

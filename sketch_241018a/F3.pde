@@ -38,6 +38,8 @@ void fac3() {
   re("328,329,330", x+size*4, y+size*4, size, size, c328C);
   re("331,332,333", x+size*6, y+size*4, size, size, c331C);
   re("334,335", x+size*7, y+size*4, size, size, c334C);
+  
+  elevator();
 }
 
 void base3() {

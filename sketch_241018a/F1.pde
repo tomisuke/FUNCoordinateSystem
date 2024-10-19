@@ -22,6 +22,7 @@ void fac1(){
   re("アトリエ",x+size*6,y,size*2,size*2,atoC);//アトリエ
   re("プレベイ",x+size*2,y,size*3,size*2,preC);//ぷれべい
   
+  elevator();
 }
 
 void floor1(){
