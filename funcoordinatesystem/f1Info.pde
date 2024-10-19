@@ -1,5 +1,5 @@
 void F10515() {
-  name = "122,123,124";
+  name = "122\n123\n124";
   hidefButton();
   background(255);
   goal = 10517;
@@ -7,7 +7,7 @@ void F10515() {
   pushDestination();
 }
 void F10715() {
-  name = "125,126,127";
+  name = "125\n126\n127";
   hidefButton();
   background(255);
   goal = 10717;
@@ -15,7 +15,7 @@ void F10715() {
   pushDestination();
 }
 void F10915() {
-  name = "128,129,130";
+  name = "128\n129\n130";
   hidefButton();
   background(255);
   goal = 10917;
@@ -23,7 +23,7 @@ void F10915() {
   pushDestination();
 }
 void F11315() {
-  name = "131,132,133";
+  name = "131\n132\n133";
   hidefButton();
   background(255);
   goal = 11317;
@@ -31,7 +31,7 @@ void F11315() {
   pushDestination();
 }
 void F11515() {
-  name = "134,135";
+  name = "134\n135";
   hidefButton();
   background(255);
   goal = 11517;

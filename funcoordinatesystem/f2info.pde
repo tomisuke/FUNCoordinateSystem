@@ -1,5 +1,5 @@
 void F20513() {
-  name = "222,223,224";
+  name = "222\n223\n224";
   hidefButton();
   background(255);
   goal = 20515;
@@ -8,7 +8,7 @@ void F20513() {
 }
 
 void F20713() {
-  name = "225,226,227";
+  name = "225\n226\n227";
   hidefButton();
   background(255);
   goal = 20715;
@@ -17,7 +17,7 @@ void F20713() {
 }
 
 void F20913() {
-  name = "228,229,230";
+  name = "228\n229\n230";
   hidefButton();
   background(255);
   goal = 20915;
@@ -26,7 +26,7 @@ void F20913() {
 }
 
 void F21313() {
-  name = "231,232,233";
+  name = "231\n232\n233";
   hidefButton();
   background(255);
   goal = 21513;
@@ -35,7 +35,7 @@ void F21313() {
 }
 
 void F21513() {
-  name = "234,235";
+  name = "234\n235";
   hidefButton();
   background(255);
   goal = 21515;
@@ -53,7 +53,7 @@ void F20115() {
 }
 
 void F20113() {
-  name = "生協事務所";
+  name = "生協\n事務所";
   hidefButton();
   background(255);
   goal = 20313;

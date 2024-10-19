@@ -146,7 +146,7 @@ void f3Button() {
     .setColorActive(buttonActiveColor);
   //4列
   //text("その他", defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY-40);
-  f3Button.addButton("F11305")
+  f3Button.addButton("F31305")
     .setLabel("体育館")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*3, defaultButtonY+(destinationButtonH + betweenH)*0)
     .setSize(destinationButtonW, destinationButtonH)

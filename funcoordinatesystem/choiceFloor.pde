@@ -3,6 +3,7 @@ void pushDestination(){
   floorButtonHome.hide();
   floorButtonNavi.show();
   scene = 1;
+  floor = 3;
 }
 void hidefButton(){
   f1Button.hide();

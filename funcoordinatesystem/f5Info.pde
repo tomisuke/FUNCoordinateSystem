@@ -1,5 +1,5 @@
 void F50509() {
-  name="522,523,524教員室";
+  name="522\n523\n524";
   hidefButton();
   background(255);
   pushDestination();
@@ -8,7 +8,7 @@ void F50509() {
 }
 
 void F50709() {
-  name="525,526,527教員室";
+  name="525\n526\n527";
   hidefButton();
   background(255);
   pushDestination();
@@ -17,7 +17,7 @@ void F50709() {
 }
 
 void F50909() {
-  name="528,529教員室";
+  name="528\n529";
   hidefButton();
   background(255);
   pushDestination();
@@ -26,7 +26,7 @@ void F50909() {
 }
 
 void F51309() {
-  name="531,532,533教員室";
+  name="531\n532\n533";
   hidefButton();
   background(255);
   pushDestination();
@@ -35,7 +35,7 @@ void F51309() {
 }
 
 void F51509() {
-  name="534,535,536教員室";
+  name="534\n535\n536";
   hidefButton();
   background(255);
   pushDestination();
@@ -98,7 +98,7 @@ void F50903() {
 }
 
 void F51103() {
-  name="01,02,03";
+  name="01\n02\n03";
   hidefButton();
   background(255);
   pushDestination();
@@ -116,7 +116,7 @@ void F51101() {
 }
 
 void F51301() {
-  name="8,9,10,11";
+  name="8,9\n10,11";
   hidefButton();
   background(255);
   pushDestination();
@@ -125,7 +125,7 @@ void F51301() {
 }
 
 void F51501() {
-  name="12,13,14,15";
+  name="12,13\n14,15";
   hidefButton();
   background(255);
   pushDestination();

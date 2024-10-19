@@ -70,7 +70,6 @@ void floor5() {
   le(6, 9, 6, 10);
   le(5, 4, 6, 4);
   le(1, 3, 1, 4);
-
   fac5();
 
   strokeWeight(ST);//外枠

@@ -1,6 +1,10 @@
 //通れない = 0,通れる=1,階段=2
+int[][] isGoF1 = new int[8][10];
+int[][] isGoF2 = new int[8][10];
+int[][] isGoF3 = new int[8][10];
+int[][] isGoF4 = new int[8][10];
+int[][] isGoF5 = new int[8][10];
 void isGo() {
-  int[][] isGoF1 = new int[8][10];
   isGoF1[1][0] = 1;
   isGoF1[2][0] = 1;
   isGoF1[3][0] = 1;
@@ -22,7 +26,7 @@ void isGo() {
   isGoF1[5][3] = 1;
   isGoF1[6][3] = 1;
   isGoF1[7][3] = 1;
-  int[][] isGoF2 = new int[8][10];
+
   isGoF2[1][1] = 1;
   isGoF2[1][2] = 1;
   isGoF2[1][2] = 2;
@@ -43,7 +47,7 @@ void isGo() {
   isGoF2[5][4] = 1;
   isGoF2[6][4] = 1;
   isGoF2[7][4] = 1;
-  int[][] isGoF3 = new int[8][10];
+
   isGoF3[1][1] = 1;
   isGoF3[1][2] = 1;
   isGoF3[1][3] = 2;
@@ -70,7 +74,7 @@ void isGo() {
   isGoF3[1][8] = 1;
   isGoF3[5][8] = 1;
   isGoF3[5][9] = 1;
-  int[][] isGoF4 = new int[8][10];
+
   isGoF4[1][1] = 1;
   isGoF4[5][1] = 1;
   isGoF4[1][2] = 1;
@@ -96,7 +100,7 @@ void isGo() {
   isGoF4[5][7] = 1;
   isGoF4[1][8] = 1;
   isGoF4[5][8] = 1;
-  int[][] isGoF5 = new int[8][10];
+  
   isGoF5[1][1] = 1;
   isGoF5[1][2] = 1;
   isGoF5[1][3] = 2;

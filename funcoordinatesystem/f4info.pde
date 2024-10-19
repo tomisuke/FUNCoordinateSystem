@@ -116,7 +116,7 @@ void F40117() {
 }
 
 void F41115() {
-  name="デルタビスタ";
+  name="デルタ\nビスタ";
   hidefButton();
   background(255);
   pushDestination();
