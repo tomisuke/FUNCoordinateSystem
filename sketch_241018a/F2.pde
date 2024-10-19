@@ -11,8 +11,10 @@ void floor2() {
       line(centerX+size*i,centerY+size*4,centerX+size*i,centerY+size*5);
     }
   }
-  for(int j=2;j<6;j++){
+  for(int j=2;j<5;j++){
     line(centerX,centerY+size*j,centerX+size*8,centerY+size*j);
   }
+  line(centerX+size*2,centerY+size*5,centerX+size*8,centerY+size*5);
+  line(centerX+size*2,centerY+size*5,centerX+size*2,centerY+size*4);
   fac2();
 }

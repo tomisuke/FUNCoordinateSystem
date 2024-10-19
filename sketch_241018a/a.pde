@@ -1,11 +1,23 @@
+int floor=3;//仮置き
+int size=75;//スペースの長さ
+int centerX=800;
+int centerY=450;
+int st=1;//線の太さ
+int ST=3;
+int colorA=90;
+int colorB=0;
 
 
-
-void fac2() {
+void re(String s,int x,int y,int w,int h,int f1){
+  fill(f1);
+  rect(x,y,w,h);
+  textAlign(CENTER,CENTER);
+  fill(0);
+  text(s,x+w/2,y+h/2);
+  textAlign(LEFT,TOP);
 }
 
-void mas(int a){//sunyaの短縮ver.
-  masugreen(centerX+size,centerY+size*11,size,a);
+void fac2() {
 }
 
 void base() {
@@ -17,6 +29,12 @@ void base() {
     floor3();
   } else if (floor==2) {
     floor2();
+  }else if(floor==1){
+    floor1();
+  }else if(floor==4){
+    floor4();
+  }else if(floor==5){
+    floor5();
   }
   textAlign(LEFT, TOP);
 }
