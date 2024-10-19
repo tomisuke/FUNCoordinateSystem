@@ -1,4 +1,4 @@
-int floor = 1;//仮置き
+int floor = 3;//仮置き
 int size = 75;//スペースの長さ
 int centerX = 800;//方眼紙の中央の座標です。
 int centerY = 450;
@@ -25,36 +25,36 @@ void re(String s,int x,int y,int w,int h,int f1) {
 void base() {
     textAlign(CENTER, CENTER);
     fill(200);
-    if(floor ==  0) {
+    if (floor ==  0) {
         rect(centerX, centerY, size * 8, size * 11);
-} else if (floor ==  3) {
+    } else if (floor ==  3) {
         floor3();
-} else if (floor ==  2) {
+    } else if (floor ==  2) {
         floor2();
-} else if (floor ==  1) {
+    } else if (floor ==  1) {
         floor1();
-} else if (floor ==  4) {
+    } else if (floor ==  4) {
         floor4();
-} else if (floor ==  5) {
+    } else if (floor == 5) {
         floor5();
-}
+    }
     textAlign(LEFT, TOP);
 }
 
 void keyPressed() {
-    if(key ==  '1') {
+    if (key ==  '1') {
         floor = 1;
-} else if (key ==  '2') {
+    } else if (key ==  '2') {
         floor = 2;
-} else if (key ==  '3') {
+    } else if (key ==  '3') {
         floor = 3;
-} else if (key ==  '4') {
+    } else if (key ==  '4') {
         floor = 4;
-} else if (key ==  '5') {
+    } else if (key ==  '5') {
         floor = 5;
-} else if (key ==  '0') {
+    } else if (key ==  '0') {
         floor = 0;//お試し版
-}
+    }
 }
 int c122C = 100;//教員室
 int c125C = 100;
@@ -90,10 +90,10 @@ void floor1() {
     stroke(0);
     for (int i = 0;i < 9;i++) {
         line(centerX + size * i,centerY + size * 0,centerX + size * i,centerY + size * 4);
-}
+    }
     for (int j = 0;j < 5;j++) {
         line(centerX,centerY + size * j,centerX + size * 8,centerY + size * j);
-}
+    }
     fac1();
 }
 int c222C = 100;//教務室
@@ -129,10 +129,10 @@ void floor2() {
         if (i > 2) {
             line(centerX + size * i,centerY + size * 4,centerX + size * i,centerY + size * 5);
         }
-}
+    }
     for (int j = 2;j < 5;j++) {
         line(centerX,centerY + size * j,centerX + size * 8,centerY + size * j);
-}
+    }
     line(centerX + size * 2,centerY + size * 5,centerX + size * 8,centerY + size * 5);
     line(centerX + size * 2,centerY + size * 5,centerX + size * 2,centerY + size * 4);
     fac2();
@@ -167,7 +167,7 @@ void fac3() {
     re("医務室,音スタ", x + size * 2, y + size * 8, size, size, medC);
     re("社会提携センター", x + size * 2, y + size * 7, size, size, socC);
     re("大講義室", x + size * 6, y + size * 5, size * 2, size, bigC);//教室
-    re("工房", x + size * 4, y + size * 7, size, size * 2, workC);
+    re("工房", x + size * 4, y + size * 7, size, size * 2,workC);
     re("えれ工", x + size * 3, y + size * 7, size, size * 2, eleC);
     re("365", x + size * 4, y + size * 5, size, size, c365C);
     re("364", x + size * 3, y + size * 5, size, size, c365C);
@@ -196,18 +196,18 @@ void floor3() {
         if (i < 2) {
             line(centerX + size * i, centerY, centerX + size * i, centerY + size * 9);
         } else if (i < 5) {
-            line(centerX + size * i, centerY + size * 3, centerX + size * i, centerY + size * 9);
+            line(centerX + size * i, centerY + size * 3, centerX + size * i,centerY + size * 9);
         } else {
-            line(centerX + size * i, centerY + size * 3, centerX + size * i, centerY + size * 10);
+            line(centerX + size * i, centerY + size * 3, centerX + size * i,centerY + size * 10);
         }
-}
+    }
     for (int j = 3; j < 10; j++) {
         line(centerX, centerY + size * j, centerX + size * 8, centerY + size * j);
         if (j < 6) {
             line(centerX, centerY + size * (j - 3), centerX + size, centerY + size * (j - 3));
         }
         line(centerX + size * 5, centerY + size * 10, centerX + size * 8, centerY + size * 10);
-}
+    }
     
     strokeWeight(st);
     fac3();
@@ -249,49 +249,19 @@ void setup() {
     font = createFont("Meiryo",20);
     textFont(font);
     center();
-    //各階の通れないところの座標の配列
-    //３ｆ偶数番目にｘ、奇数番目にｙ座標
-    int f3x[] = new int[66];
-    //情報ライブラリ
-    for (int i = 0; i < 6; i++) {
-        f3x[2 * i] = mapx(0);
-        f3x[2 * i + 1] = mapy(i);
+}
+
+void draw() {
+    background(255);
+    base();
+    navi();
+    for (int i = 0; i < record;i++) {
+        masufillR(way[0][i],way[1][i],size);
+        //println(way[0][i],way[1][i]);
     }
-        // 吹き抜け
-        for(int i = 0; i < 3; i++) {
-            for (int j = 0; j < 6; j++) {
-                f3x[12 +2 * j + 12 * i] = mapx(2 + j);
-                f3x[12 +(2 * j + 1) + 12 * i] = mapy(i);
-            }
-        }
-            //47個要素が入っている
-            //363,4,5教室、大講義室、エレ工、工房、ミュージアム
-            f3x[48] = mapx(2);
-            f3x[50] = mapx(3);
-            f3x[52] = mapx(4);
-            f3x[54] = mapx(6);
-            f3x[56] = mapx(7);
-            f3x[49] = mapy(5);
-            f3x[51] = mapy(5);
-            f3x[53] = mapy(5);
-            f3x[55] = mapy(5);
-            f3x[57] = mapy(5);
-            f3x[58] = mapx(2);
-            f3x[60] = mapx(2);
-            f3x[59] = mapy(7);
-            f3x[61] = mapy(8);
-            f3x[62] = mapx(3);
-            f3x[64] = mapx(4);
-            f3x[63] = mapy(7);
-            f3x[65] = mapy(7);
-        }
-            
-       void draw() {
-                background(255);
-                base();
-                masufill(masuxyz(h)[0],masuxyz(h)[1],size);
-                
-            }
-                
-                int h = 30107;//sunya
-               int goal = 31307;
+    masufillS(masuxyz(h)[0],masuxyz(h)[1],size);
+    masufillD(masuxyz(distination)[0],masuxyz(distination)[1],size);
+}
+int h = 30007;//現在地
+int goal = 30913;//目的地のゴール
+int distination = 30911;//目的地
