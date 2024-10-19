@@ -1,12 +1,12 @@
-void setup(){
+void setup() {
     size(1600,900);
     background(255);
     
 }
 
-int h  =30101;
+int h  = 30101;
 
-void draw(){
+void draw() {
     
-    println(masuxyz(h));
+    masugreen(0,0,50,h);
 }
