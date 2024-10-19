@@ -18,7 +18,7 @@ void setup() {
   rect(0, 0, width, height);
   font = createFont("MS Gothic", 35, true);
   choiceFloor();
-  isGoF1();
+  isGo();
 }
 
 void draw() {

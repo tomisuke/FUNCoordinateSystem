@@ -22,7 +22,7 @@ void isGo() {
   isGoF1[5][3] = 1;
   isGoF1[6][3] = 1;
   isGoF1[7][3] = 1;
-  int[][] isGoF2 = new int[8][4];
+  int[][] isGoF2 = new int[8][10];
   isGoF2[1][1] = 1;
   isGoF2[1][2] = 1;
   isGoF2[1][2] = 2;
@@ -43,7 +43,7 @@ void isGo() {
   isGoF2[5][4] = 1;
   isGoF2[6][4] = 1;
   isGoF2[7][4] = 1;
-  int[][] isGoF3 = new int[8][4];
+  int[][] isGoF3 = new int[8][10];
   isGoF3[1][1] = 1;
   isGoF3[1][2] = 1;
   isGoF3[1][3] = 2;
@@ -70,7 +70,7 @@ void isGo() {
   isGoF3[1][8] = 1;
   isGoF3[5][8] = 1;
   isGoF3[5][9] = 1;
-  int[][] isGoF4 = new int[8][4];
+  int[][] isGoF4 = new int[8][10];
   isGoF4[1][1] = 1;
   isGoF4[5][1] = 1;
   isGoF4[1][2] = 1;
@@ -96,4 +96,23 @@ void isGo() {
   isGoF4[5][7] = 1;
   isGoF4[1][8] = 1;
   isGoF4[5][8] = 1;
+  int[][] isGoF5 = new int[8][10];
+  isGoF5[1][1] = 1;
+  isGoF5[1][2] = 1;
+  isGoF5[1][3] = 2;
+  isGoF5[1][4] = 1;
+  isGoF5[2][4] = 1;
+  isGoF5[3][4] = 1;
+  isGoF5[4][4] = 1;
+  isGoF5[5][4] = 2;
+  isGoF5[6][4] = 1;
+  isGoF5[7][4] = 1;
+  isGoF5[0][6] = 1;
+  isGoF5[1][6] = 1;
+  isGoF5[2][6] = 1;
+  isGoF5[3][6] = 1;
+  isGoF5[4][6] = 1;
+  isGoF5[5][6] = 1;
+  isGoF5[6][6] = 1;
+  isGoF5[7][6] = 1;//通路要検討
 }
