@@ -1,18 +1,18 @@
-int c422C=100;//教務室
-int c425C=100;
-int c428C=100;
-int c431C=100;
-int c434C=100;
-int mainC=100;//講堂
-int deC=100;//でるた
-int manC=100;//事務局
-int c483C=100;
-int c484C=100;
-int c485C=100;
-int c486C=100;
-int c493C=100;
-int c494C=100;
-int c495C=100;
+int c422C=130;//教務室
+int c425C=130;
+int c428C=130;
+int c431C=130;
+int c434C=130;
+int mainC=130;//講堂
+int deC=130;//でるた
+int manC=130;//事務局
+int c483C=130;
+int c484C=130;
+int c485C=130;
+int c486C=130;
+int c493C=130;
+int c494C=130;
+int c495C=130;
 
 void fac4() {
   int x=centerX;

@@ -1,20 +1,20 @@
 int enterC=255;
-int libC=100;//ライブラリ（以下色の指定）
-int musC=100;//ミュージアム
-int gymC=100;//体育館
-int medC=100;//医務室と音スタ
-int socC=100;//社会提携
-int bigC=100;//大講義室
-int workC=100;//工房
-int eleC=100;//えれくと工房
-int c365C=100;//36n
-int c364C=100;
-int c363C=100;
-int c322C=100;//研究室
-int c325C=100;
-int c328C=100;
-int c331C=100;
-int c334C=100;
+int libC=130;//ライブラリ（以下色の指定）
+int musC=130;//ミュージアム
+int gymC=130;//体育館
+int medC=130;//医務室と音スタ
+int socC=130;//社会提携
+int bigC=130;//大講義室
+int workC=130;//工房
+int eleC=130;//えれくと工房
+int c365C=130;//36n
+int c364C=130;
+int c363C=130;
+int c322C=130;//研究室
+int c325C=130;
+int c328C=130;
+int c331C=130;
+int c334C=130;
 
 void fac3() {
   int x=centerX;

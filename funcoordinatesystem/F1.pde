@@ -1,13 +1,13 @@
 int enter2C=255;
-int c122C=100;//教員室
-int c125C=100;
-int c128C=100;
-int c131C=100;
-int c134C=100;
-int eatC=100;//食堂
-int eatsC=100;//厨房（案内しない）
-int atoC=100;//アトリエ
-int preC=100;//ぷれヴぇい
+int c122C=130;//教員室
+int c125C=130;
+int c128C=130;
+int c131C=130;
+int c134C=130;
+int eatC=130;//食堂
+int eatsC=130;//厨房（案内しない）
+int atoC=130;//アトリエ
+int preC=130;//ぷれヴぇい
 
 void fac1() {
   int x=centerX;

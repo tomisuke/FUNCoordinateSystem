@@ -1,10 +1,10 @@
-int c222C=100;//教務室
-int c225C=100;
-int c228C=100;
-int c231C=100;
-int c234C=100;
-int buyC=100;//購買
-int buysC=100;//生協事務局
+int c222C=130;//教務室
+int c225C=130;
+int c228C=130;
+int c231C=130;
+int c234C=130;
+int buyC=130;//購買
+int buysC=130;//生協事務局
 
 void fac2() {
   int x=centerX;

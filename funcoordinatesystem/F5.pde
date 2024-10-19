@@ -1,22 +1,22 @@
 //講堂はF4に
-int conC=100;
-int labC=100;
-int c583C=100;
-int c584C=100;
-int c585C=100;
-int c586C=100;
-int c593C=100;
-int c594C=100;
-int c595C=100;
-int c522C=100;//教務室
-int c525C=100;
-int c528C=100;
-int c531C=100;
-int c534C=100;
-int cir1C=100;
-int cir4C=100;
-int cir8C=100;
-int cir12C=100;
+int conC=130;
+int labC=130;
+int c583C=130;
+int c584C=130;
+int c585C=130;
+int c586C=130;
+int c593C=130;
+int c594C=130;
+int c595C=130;
+int c522C=130;//教務室
+int c525C=130;
+int c528C=130;
+int c531C=130;
+int c534C=130;
+int cir1C=130;
+int cir4C=130;
+int cir8C=130;
+int cir12C=130;
 
 void fac5() {
   int x=centerX;
