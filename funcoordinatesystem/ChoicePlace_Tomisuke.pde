@@ -1,5 +1,6 @@
 void choiceFloorHome() {
-  floorButtonHome.setFont(font);
+  fill(255);
+  floorButtonHome.setFont(font40);
   int floorButtonW = 300, floorButtonH = height/5;
   floorButtonHome.addButton("f5")
     .setLabel("5F")
@@ -7,6 +8,7 @@ void choiceFloorHome() {
     .setSize(floorButtonW, floorButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
+    .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
 
@@ -16,6 +18,7 @@ void choiceFloorHome() {
     .setSize(floorButtonW, floorButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
+    .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
 
@@ -25,6 +28,7 @@ void choiceFloorHome() {
     .setSize(floorButtonW, floorButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
+    .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
   floorButtonHome.addButton("f2")
@@ -33,6 +37,7 @@ void choiceFloorHome() {
     .setSize(floorButtonW, floorButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
+    .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
   floorButtonHome.addButton("f1")
@@ -41,12 +46,13 @@ void choiceFloorHome() {
     .setSize(floorButtonW, floorButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
+    .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
 }
 
 void choiceFloorNavi() {
-  floorButtonNavi.setFont(font);
+  floorButtonNavi.setFont(font40);
   int floorButtonW = 300, floorButtonH = height/5;
   floorButtonNavi.addButton("f5N")
     .setLabel("5F")
@@ -54,6 +60,7 @@ void choiceFloorNavi() {
     .setSize(floorButtonW, floorButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
+    .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
 
@@ -63,6 +70,7 @@ void choiceFloorNavi() {
     .setSize(floorButtonW, floorButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
+    .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
 
@@ -72,6 +80,7 @@ void choiceFloorNavi() {
     .setSize(floorButtonW, floorButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
+    .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
   floorButtonNavi.addButton("f2N")
@@ -80,6 +89,7 @@ void choiceFloorNavi() {
     .setSize(floorButtonW, floorButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
+    .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
   floorButtonNavi.addButton("f1N")
@@ -88,15 +98,17 @@ void choiceFloorNavi() {
     .setSize(floorButtonW, floorButtonH)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
+    .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
 
   floorButtonNavi.addButton("back")
-    .setLabel("Home")
+    .setLabel("←")
     .setPosition(320, 40)
     .setSize(100, 100)
     .setColorCaptionLabel(labelColor)
     .setColorBackground(buttonColor)
+    .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
 }

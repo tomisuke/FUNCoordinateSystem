@@ -27,7 +27,7 @@ int betweenW = 40;
 int goal, destination;
 String name;
 //ボタンの色
-int labelColor = 0;
+int labelColor = 255;
 int buttonColor = #990000;
 int buttonForegroundColor = #994444; //frowMouse
 int buttonActiveColor = #330000;//pressed
@@ -35,6 +35,7 @@ int objectColor = #550000;
 int h = 30007;//現在地
 
 PFont font;
+PFont font40;
 void setup() {
   floorButtonHome = new ControlP5(this);
   floorButtonNavi = new ControlP5(this);
@@ -46,6 +47,7 @@ void setup() {
   size(1600, 900);
   background(255);
   font = createFont("Meiryo", 20);
+  font40 = createFont("Meiryo", 40);
   textFont(font);
   center();
   choiceFloorHome();

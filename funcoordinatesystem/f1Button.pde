@@ -1,5 +1,5 @@
-void f1Button(){
-    fill(0);
+void f1Button() {
+  fill(0);
   textSize(50);
   //1列目
   text("教員室", defaultButtonX, defaultButtonY-40);
@@ -61,8 +61,8 @@ void f1Button(){
     .setColorForeground(buttonForegroundColor)
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
-//三列
-      text("施設", defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY-40);
+  //三列
+  text("施設", defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY-40);
   f1Button.addButton("F10115")
     .setLabel("食堂")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY+(destinationButtonH + betweenH)*0)
