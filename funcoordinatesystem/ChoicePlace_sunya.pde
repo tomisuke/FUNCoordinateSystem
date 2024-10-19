@@ -39,6 +39,13 @@ void masufillD(int x, int y, int size) {
   int ay = mappoint(x, y)[1];
   fill(255, 0, 0);
   rect(mapx(ax), mapy(ay), size, size);
+<<<<<<< HEAD
+=======
+  fill(255);
+  textAlign(CENTER, CENTER);
+  text(name, mapx(ax)+size/2, mapy(ay)+size/2);
+  textAlign(LEFT, TOP);
+>>>>>>> a2dd60050841b734d00811d655b86e90cd35edb3
 }
 void masufillR(int x, int y, int size) {
   //int ax = mappoint(x,y)[0];
@@ -97,6 +104,7 @@ void navi() {
     } else {
       check = decx - decy;
     }
+<<<<<<< HEAD
     //println(decy,check);
     //x,yを+1してぶつかるかぶつからないかを判定してから配列に代入
 
@@ -132,6 +140,53 @@ void navi() {
       way[0][record] = startX;
       way[1][record] = startY;
       record++;
+=======
+  } else if (masuxyz(goal)[2] == 5) {//目的地が5階の場合
+    if (floor == 3) {
+      masufillKU();
+      f3StairU.show();
+      textAlign(CENTER, CENTER);
+      fill(0);
+      text("4階へ", centerX+size*2-size/2, centerY+size*6+size/2);
+      textAlign(LEFT, TOP);
+    } else if (floor == 4) {
+      masufillKU();
+      textAlign(CENTER, CENTER);
+      fill(0);
+      text("5階へ", centerX+size*2-size/2, centerY+size*6+size/2);
+      textAlign(LEFT, TOP);
+    } else if (floor == 5) {
+      masufillKU();
+    }
+  } else if (masuxyz(goal)[2] == 2) {//目的地が2階の場合
+    if (floor == 2) {
+      masufillK2();
+    } else if (floor == 3) {
+      f3StairD.show();
+      masufillKD();
+      textAlign(CENTER, CENTER);
+      fill(0);
+      text("2階へ", centerX+size*2-size/2, centerY+size*3+size/2);
+      textAlign(LEFT, TOP);
+    }
+  } else if (masuxyz(goal)[2] == 1) {//目的地が1階の場合
+    if (floor == 3) {
+      masufillKD();
+      textAlign(CENTER, CENTER);
+      fill(0);
+      f3StairD.show();
+      text("2階へ", centerX+size*2-size/2, centerY+size*3+size/2);
+      textAlign(LEFT, TOP);
+    } else if (floor == 2) {
+      masufillK2();
+      masufillK1();
+      textAlign(CENTER, CENTER);
+      fill(0);
+      text("1階へ", centerX+size*2-size/2, centerY+size*2+size/2);
+      textAlign(LEFT, TOP);
+    } else if (floor == 1) {
+      masufillK1();
+>>>>>>> a2dd60050841b734d00811d655b86e90cd35edb3
     }
     
     
@@ -139,4 +194,30 @@ void navi() {
   //目的地が3階以外の場合
   else {
   }
+}
+void stairButton() {
+  f3StairU.addButton("f4N")
+    .setLabel("")
+    .setPosition(mapx(1), mapy(6))
+    .setSize(size, size)
+    .setColorBackground(transparent)
+    .setColorCaptionLabel(transparent)
+    .setColorBackground(transparent)
+    .setColorLabel(transparent)
+    .setColorForeground(transparent)
+    .setColorActive(transparent);
+  f3StairD.addButton("f2N")
+    .setLabel("")
+    .setPosition(mapx(1), mapy(3))
+    .setSize(size, size)
+    .setColorBackground(transparent)
+    .setColorCaptionLabel(transparent)
+    .setColorBackground(transparent)
+    .setColorLabel(transparent)
+    .setColorForeground(transparent)
+    .setColorActive(transparent);
+}
+void hideStairButton() {
+  f3StairU.hide();
+  f3StairD.hide();
 }

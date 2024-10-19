@@ -2,7 +2,7 @@ void f4Button() {
   fill(0);
   textSize(50);
   //1列目
-  text("教員室", defaultButtonX, defaultButtonY-40);
+  text("教員室", defaultButtonX, defaultButtonY-titleBuffer);
   f4Button.setFont(font);
   f4Button.addButton("F40511")
     .setLabel("422,423,424")
@@ -51,7 +51,7 @@ void f4Button() {
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
   //2列目
-  text("教室", defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY-40);
+  text("教室", defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY-titleBuffer);
   f4Button.addButton("F40505")
     .setLabel("483")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*1, defaultButtonY+(destinationButtonH + betweenH)*0)
@@ -107,7 +107,7 @@ void f4Button() {
     .setColorLabel(#ffffff)
     .setColorActive(buttonActiveColor);
   //3列
-  text("施設", defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY-40);
+  text("施設", defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY-titleBuffer);
   f4Button.addButton("F40105")
     .setLabel("事務局")
     .setPosition(defaultButtonX+(destinationButtonW + betweenW)*2, defaultButtonY+(destinationButtonH + betweenH)*0)
