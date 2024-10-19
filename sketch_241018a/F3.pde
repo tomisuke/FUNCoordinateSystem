@@ -1,3 +1,4 @@
+int enterC=255;
 int libC=100;//ライブラリ（以下色の指定）
 int musC=100;//ミュージアム
 int gymC=100;//体育館
@@ -19,6 +20,8 @@ void fac3(){
   int x=centerX;
   int y=centerY;
   
+  re("玄関",x,y+size*25/4,size/3,size/2,enterC);
+  
   re("ライブラリ",x,y,size,size*6,libC);//施設
   re("ミュージアム",x,y+size*7,size,size,musC);
   re("体育館",x+size*6,y+size*7,size*2,size*3,gymC);
@@ -26,7 +29,7 @@ void fac3(){
   re("社会提携センター",x+size*2,y+size*7,size,size,socC);
   re("大講義室",x+size*6,y+size*5,size*2,size,bigC);//教室
   re("工房",x+size*4,y+size*7,size,size*2,workC);
-  re("エレ工",x+size*3,y+size*7,size,size*2,eleC);
+  re("えれ工",x+size*3,y+size*7,size,size*2,eleC);
   re("365",x+size*4,y+size*5,size,size,c365C);
   re("364",x+size*3,y+size*5,size,size,c365C);
   re("363",x+size*2,y+size*5,size,size,c365C);
