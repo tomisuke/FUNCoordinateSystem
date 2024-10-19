@@ -1,8 +1,8 @@
 int[] masuxyz(int id) {//idからもらった数値を配列｛x,y,z｝として返す
     int masux, masuy, masuz;
-    masux = int(id / 10000);
-    masuy = int((id - masux * 10000) / 100);
-    masuz = id - masux * 10000 - masuy * 100;
+    masuz = int(id / 10000);
+    masux = int((id - masuz * 10000) / 100);
+    masuy = id - masuz * 10000 - masux * 100;
     int a[] = new int[3];
     a[0] = masux;
     a[1] = masuy;
@@ -10,11 +10,14 @@ int[] masuxyz(int id) {//idからもらった数値を配列｛x,y,z｝として
     return a;
 }
 
-void masugreen(int x, int y,int size, int id) {
-    int masux = masuxyz(id)[0];//こいつらは、１，３，５………という値をとる
-    int masuy = masuxyz(id)[1];
-    
-    fill(0,255,0);
-    rect(x - size * (masux * 0.5 - 0.5),y - size * (masuy * 0.5 - 0.5),size,size);
+
+
+int[] mappoint(int x, int y) {
+    int mapx = 0.5 * x + 0.5;
+    int mapy = -0.5  * y + 9.5;
+    int mapxy[] = new int[2];
+    mapxy[0] = mapx;
+    mapxy[1] = mapy;
+    return mapxy;
 }
 
