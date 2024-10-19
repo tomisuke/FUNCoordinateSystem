@@ -16,8 +16,8 @@ ControlP5 f4Stair;
 int scene = 0;
 //マップ系グローバル変数
 int floor = 3;//仮置き
-int size = 75;//スペースの長さ
-int centerX = 800;//方眼紙の中央の座標です。
+int size = 85;//スペースの長さ
+int centerX = 1000;//方眼紙の中央の座標です。
 int centerY = 450;
 int st = 1;//線の太さ
 int ST = 3;//外枠の太さ
@@ -193,8 +193,8 @@ void setup() {
   hideAllButton();
   floorButtonHome.show();
   f3();
- // stairButton();
- // hideStairButton();
+  stairButton();
+  hideStairButton();
 }
 void draw() {
   switch(scene) {

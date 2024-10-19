@@ -26,38 +26,48 @@ int mapy(int y) {
 }
 
 void masufillS(int x, int y, int size) {
-  int ax = mappoint(x, y)[0];
-  int ay = mappoint(x, y)[1];
-  fill(0, 255, 0);
-  rect(mapx(ax), mapy(ay), size, size);
+  if (floor == 3) {
+    int ax = mappoint(x, y)[0];
+    int ay = mappoint(x, y)[1];
+    fill(#4169e1);
+    rect(mapx(ax), mapy(ay), size, size);
+  }
 }
 void masufillD(int x, int y, int size) {
-  int ax = mappoint(x, y)[0];
-  int ay = mappoint(x, y)[1];
-  fill(255, 0, 0);
-  rect(mapx(ax), mapy(ay), size, size);
+  if (masuxyz(goal)[2] == floor) {
+    int ax = mappoint(x, y)[0];
+    int ay = mappoint(x, y)[1];
+    fill(#990000);
+    rect(mapx(ax), mapy(ay), size, size);
+    textAlign(CENTER, CENTER);
+    fill(255);
+    text(name, mapx(ax)+size/2, mapy(ay)+size/2);
+    textAlign(LEFT, TOP);
+  }
 }
 void masufillR(int x, int y, int size) {
-  //int ax = mappoint(x,y)[0];
-  //int ay = mappoint(x,y)[1];
-  //println(ax,ay);
-  fill(0, 0, 255);
-  rect(mapx(x), mapy(y), size, size);
+  if (floor == 3) {
+    //int ax = mappoint(x,y)[0];
+    //int ay = mappoint(x,y)[1];
+    //println(ax,ay);
+    fill(#c6e79c);
+    rect(mapx(x), mapy(y), size, size);
+  }
 }
 void masufillKU() {
-  fill(255, 255, 0);
+  fill(#ffd700);
   rect(mapx(1), mapy(6), size, size);
 }
 void masufillKD() {
-  fill(255, 255, 0);
+  fill(#ffd700);
   rect(mapx(1), mapy(3), size, size);
 }
 void masufillK2() {
-  fill(255, 255, 0);
+  fill(#ffd700);
   rect(mapx(1), mapy(3), size, size);
 }
 void masufillK1() {
-  fill(255, 255, 0);
+  fill(#ffd700);
   rect(mapx(1), mapy(2), size, size);
 }
 //通った道を保存する二重配列
@@ -158,6 +168,7 @@ void navi() {
   } else if (masuxyz(goal)[2] == 4) {//目的地が4階の場合
     if (floor == 3) {
       masufillKU();
+      f3StairU.show();
       textAlign(CENTER, CENTER);
       fill(0);
       text("4階へ", centerX+size*2-size/2, centerY+size*6+size/2);
@@ -175,6 +186,7 @@ void navi() {
       textAlign(LEFT, TOP);
     } else if (floor == 4) {
       masufillKU();
+      f4Stair.show();
       textAlign(CENTER, CENTER);
       fill(0);
       text("5階へ", centerX+size*2-size/2, centerY+size*6+size/2);
@@ -204,6 +216,7 @@ void navi() {
     } else if (floor == 2) {
       masufillK2();
       masufillK1();
+      f2Stair.show();
       textAlign(CENTER, CENTER);
       fill(0);
       text("1階へ", centerX+size*2-size/2, centerY+size*2+size/2);
@@ -213,7 +226,6 @@ void navi() {
     }
   }
 }
-
 
 void stairButton() {
   f3StairU.addButton("f4N")
@@ -236,9 +248,19 @@ void stairButton() {
     .setColorLabel(transparent)
     .setColorForeground(transparent)
     .setColorActive(transparent);
-  f3StairD.addButton("f2N")
+  f4Stair.addButton("f5N")
     .setLabel("")
-    .setPosition(mapx(1), mapy(3))
+    .setPosition(mapx(1), mapy(6))
+    .setSize(size, size)
+    .setColorBackground(transparent)
+    .setColorCaptionLabel(transparent)
+    .setColorBackground(transparent)
+    .setColorLabel(transparent)
+    .setColorForeground(transparent)
+    .setColorActive(transparent);
+  f2Stair.addButton("f1N")
+    .setLabel("")
+    .setPosition(mapx(1), mapy(2))
     .setSize(size, size)
     .setColorBackground(transparent)
     .setColorCaptionLabel(transparent)
@@ -250,4 +272,6 @@ void stairButton() {
 void hideStairButton() {
   f3StairU.hide();
   f3StairD.hide();
+  f2Stair.hide();
+  f4Stair.hide();
 }
