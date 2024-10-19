@@ -54,3 +54,11 @@ void F10215() {
   destination = 10115;
   pushDestination();
 }
+void F10719() {
+  name = "プレゼンテーションベイ";
+  hidefButton();
+  background(255);
+  goal = 10719;
+  destination = 10719;
+  pushDestination();
+}
