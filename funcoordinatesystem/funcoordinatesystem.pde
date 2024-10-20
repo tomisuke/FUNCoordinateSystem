@@ -16,7 +16,7 @@ ControlP5 f4Stair;
 int scene = 0;
 //マップ系グローバル変数
 int floor = 3;//仮置き
-int size = 85;//スペースの長さ
+int size = 80;//スペースの長さ
 int centerX = 1000;//方眼紙の中央の座標です。
 int centerY = 450;
 int st = 1;//線の太さ
@@ -203,12 +203,13 @@ void draw() {
     background(255);
     base();
     navi();
-        for (int i = 0; i < record; i++) {
+    for (int i = 0; i < record; i++) {
       masufillR(way[0][i], way[1][i], size);
       //println(way[0][i],way[1][i]);
     }
-        masufillS(masuxyz(h)[0], masuxyz(h)[1], size);
+    masufillS(masuxyz(h)[0], masuxyz(h)[1], size);
     masufillD(masuxyz(destination)[0], masuxyz(destination)[1], size);
+    drawID();
     break;
   }
 }
