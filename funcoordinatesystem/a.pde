@@ -71,6 +71,7 @@ void clock(){
   text("ブラインド",cx,cy-cw/2-20);
   textAlign(LEFT,TOP);
   textSize(20);
+  strokeWeight(st);
 }
 
 void li(int a, int b) {
