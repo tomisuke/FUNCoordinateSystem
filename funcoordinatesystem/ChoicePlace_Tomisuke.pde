@@ -109,9 +109,10 @@ void choiceFloorNavi() {
     .setColorLabel(labelColor)
     .setColorForeground(buttonForegroundColor)
     .setColorActive(buttonActiveColor);
-  f1Button.setFont(font);
+    
   backButtonNavi.addButton("back")
     .setLabel("Home")
+    .setFont(font)
     .setPosition(320, 40)
     .setSize(100, 100)
     .setColorCaptionLabel(labelColor)

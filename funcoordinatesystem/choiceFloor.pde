@@ -27,6 +27,11 @@ void hideAllButton() {
   f3ButtonHome.hide();
   f4ButtonHome.hide();
   f5ButtonHome.hide();
+  f1ButtonNavi.hide();
+  f2ButtonNavi.hide();
+  f3ButtonNavi.hide();
+  f4ButtonNavi.hide();
+  f5ButtonNavi.hide();
   f1Button.hide();
   f2Button.hide();
   f3Button.hide();
@@ -55,8 +60,8 @@ void f5() {
 void f4() {
   background(255);
   hidefButton();
-  f4Button();
   f4Button.show();
+  f4Button();
   println("4階を選択");
   f5ButtonHome.setColorBackground(buttonColor);
   f4ButtonHome.setColorBackground(choicedColor);
@@ -204,6 +209,7 @@ void f1N() {
 void back() {
   scene = 0;
   hideAllButton();
+  hideStairButton();
   background(255);
   f3();
   f1ButtonHome.show();
@@ -212,5 +218,4 @@ void back() {
   f4ButtonHome.show();
   f5ButtonHome.show();
   println("ホームに戻った");
-  hideStairButton();
 }

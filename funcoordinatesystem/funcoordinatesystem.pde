@@ -44,11 +44,11 @@ int titleBuffer = 60;
 String name;
 //ボタンの色
 int labelColor = 255;
-int choicedColor = #00ff00;
-int choicedfore = #00dd00;
+int choicedColor = #800000;
+int choicedfore = #800000;
 int buttonColor = #990000;
 int buttonForegroundColor = #994444; //frowMouse
-int buttonActiveColor = #330000;//pressed
+int buttonActiveColor = #731717;//pressed
 int objectColor = #550000;
 int h = 30007;//現在地
 int transparent = color(0, 0, 0, 1);
