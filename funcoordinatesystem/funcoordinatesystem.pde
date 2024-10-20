@@ -1,6 +1,15 @@
 import controlP5.*;
-ControlP5 floorButtonHome;
-ControlP5 floorButtonNavi;
+ControlP5 f1ButtonHome;
+ControlP5 f2ButtonHome;
+ControlP5 f3ButtonHome;
+ControlP5 f4ButtonHome;
+ControlP5 f5ButtonHome;
+ControlP5 f1ButtonNavi;
+ControlP5 f2ButtonNavi;
+ControlP5 f3ButtonNavi;
+ControlP5 f4ButtonNavi;
+ControlP5 f5ButtonNavi;
+ControlP5 backButtonNavi;
 ControlP5 f1Button;
 ControlP5 f2Button;
 ControlP5 f3Button;
@@ -35,6 +44,8 @@ int titleBuffer = 60;
 String name;
 //ボタンの色
 int labelColor = 255;
+int choicedColor = #00ff00;
+int choicedfore = #00dd00;
 int buttonColor = #990000;
 int buttonForegroundColor = #994444; //frowMouse
 int buttonActiveColor = #330000;//pressed
@@ -45,8 +56,17 @@ int transparent = color(0, 0, 0, 1);
 PFont font;
 PFont font40;
 void setup() {
-  floorButtonHome = new ControlP5(this);
-  floorButtonNavi = new ControlP5(this);
+  f1ButtonHome = new ControlP5(this);
+  f2ButtonHome = new ControlP5(this);
+  f3ButtonHome = new ControlP5(this);
+  f4ButtonHome = new ControlP5(this);
+  f5ButtonHome = new ControlP5(this);
+  f1ButtonNavi = new ControlP5(this);
+  f2ButtonNavi = new ControlP5(this);
+  f3ButtonNavi = new ControlP5(this);
+  f4ButtonNavi = new ControlP5(this);
+  f5ButtonNavi = new ControlP5(this);
+  backButtonNavi = new ControlP5(this);
   f1Button = new ControlP5(this);
   f2Button = new ControlP5(this);
   f3Button = new ControlP5(this);
@@ -191,7 +211,11 @@ void setup() {
   choiceFloorNavi();
   isGo();
   hideAllButton();
-  floorButtonHome.show();
+  f1ButtonHome.show();
+  f2ButtonHome.show();
+  f3ButtonHome.show();
+  f4ButtonHome.show();
+  f5ButtonHome.show();
   f3();
   stairButton();
   hideStairButton();
@@ -199,7 +223,6 @@ void setup() {
 void draw() {
   switch(scene) {
   case 1:
-    println(floor);
     background(255);
     base();
     navi();

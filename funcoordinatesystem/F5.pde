@@ -22,7 +22,7 @@ void fac5() {
   int x=centerX;
   int y=centerY;
   re("講堂", x, y+size, size, size*2, mainC);
-  re("コン\nカフェ", x, y+size*4, size, size, conC);
+  re("コネ\nカフェ", x, y+size*4, size, size, conC);
   re("共同\n研究室", x, y+size*7, size, size*2, labC);
   re("583", x+size*2, y+size*7, size, size, c583C);
   re("584", x+size*3, y+size*7, size, size, c584C);
