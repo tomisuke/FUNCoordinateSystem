@@ -21,7 +21,7 @@ void fac1() {
   re("食堂", x, y, size, size*3, eatC);//食堂
   re("厨房", x, y+size*3, size, size, eatsC);//厨房
   re("アトリエ", x+size*6, y, size*2, size*2, atoC);//アトリエ
-  re("プレベイ", x+size*2, y, size*3, size*2, preC);//ぷれべい
+  re("プレベイ", x+size*2, y, size*3, size, preC);//ぷれべい
 }
 
 void floor1() {

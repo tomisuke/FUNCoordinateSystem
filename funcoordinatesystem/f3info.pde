@@ -80,7 +80,7 @@ void F31309() {//大講義室
 }
 
 void F30109() {//情報ライブラリ
-  name="情報ライブラリ";
+  name="情報\nライブ\nラリ";
   hidefButton();
   background(255);
   pushDestination();

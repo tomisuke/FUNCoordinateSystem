@@ -152,7 +152,7 @@ void F50115() {
 }
 
 void F50105() {
-  name="共同研究室";
+  name="共同\n研究室";
   hidefButton();
   background(255);
   pushDestination();
