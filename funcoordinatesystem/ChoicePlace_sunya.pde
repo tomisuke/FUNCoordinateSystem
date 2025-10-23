@@ -72,12 +72,12 @@ void masufillK1() {
 }
 //通った道を保存する二重配列
 int[][] way = new int[2][20];//[0][]はx座標、[1][]がy座標
-int record = 0;
+int rec = 0;
 
 
 void navi() {
 
-  record = 0;
+  rec = 0;
   int[][] isGoF3 = new int[8][10];
   isGoF3[1][1] = 1;
   isGoF3[1][2] = 1;
@@ -132,7 +132,7 @@ void navi() {
     //println(decy,check);
     //x,yを+1してぶつかるかぶつからないかを判定してから配列に代入
 
-    while (record < check) {
+    while (rec < check) {
 
 
 
@@ -161,9 +161,9 @@ void navi() {
       }
 
       // 経路を保存
-      way[0][record] = startX;
-      way[1][record] = startY;
-      record++;
+      way[0][rec] = startX;
+      way[1][rec] = startY;
+      rec++;
     }
   } else if (masuxyz(goal)[2] == 4) {//目的地が4階の場合
     if (floor == 3) {

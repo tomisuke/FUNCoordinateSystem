@@ -226,7 +226,7 @@ void draw() {
     background(255);
     base();
     navi();
-    for (int i = 0; i < record; i++) {
+    for (int i = 0; i < rec; i++) {
       masufillR(way[0][i], way[1][i], size);
       //println(way[0][i],way[1][i]);
     }
